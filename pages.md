@@ -20,8 +20,13 @@
 - Name: About
 - Component: About.vue
 
+
 ## 4. 照片墙
 
 - 地址: /gallery
 - Name: Gallery
 - Component: Gallery.vue
+
+## 这些页面在哪里?
+### 路由表位于 _/src/router.js_
+### 路由页面位于 _/src/components_

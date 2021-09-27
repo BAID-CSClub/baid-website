@@ -4,6 +4,7 @@ import Events from "./components/Events.vue";
 import About from "./components/About.vue";
 import Err404 from "./components/Err404.vue";
 import Err5xx from "./components/Err5xx.vue";
+import Gallery from "./components/Gallery.vue";
 const Router = createRouter({
     history: createWebHistory(),
     routes: [
@@ -21,6 +22,11 @@ const Router = createRouter({
             path: '/about',
             name: "About",
             component: About
+        },
+        {
+            path: '/gallery',
+            name: "Gallery",
+            component: Gallery
         },
         {
             path: '/error/404',
