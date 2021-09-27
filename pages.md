@@ -19,3 +19,9 @@
 - 地址: /about
 - Name: About
 - Component: About.vue
+
+## 4. 照片墙
+
+- 地址: /gallery
+- Name: Gallery
+- Component: Gallery.vue
