@@ -2,24 +2,37 @@
 
 > 使用vue-router@4完成分页
 
+
+
 ## 1. 首页
 
 - 地址: /
 - Name: Index
 - Component: Index.vue
 
-## 2. 新闻事件
+### 首页结构：
+- 头图（红叶）
+- 学校介绍
+    - 理念
+    - 环境
+    - 师资
+    - （浏览更多：指向【学校介绍】子页面）
+- 新闻
+    - 两条最新新闻
+    - （浏览更多：指向【新闻】子页面）
+- footer
 
-- 地址: /events
-- Name: Events
-- Component: Events.vue
-
-## 3. 关于我们
+## 2. 学校介绍
 
 - 地址: /about
 - Name: About
 - Component: About.vue
 
+## 3. 新闻
+
+- 地址: /events
+- Name: Events
+- Component: Events.vue
 
 ## 4. 照片墙
 
