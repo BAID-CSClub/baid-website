@@ -11,6 +11,7 @@
 - Component: Index.vue
 
 ### 首页结构：
+- header
 - 头图（红叶）
 - 学校介绍
     - 理念
