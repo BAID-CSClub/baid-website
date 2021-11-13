@@ -2,11 +2,11 @@
   <div id="frame">
     <span id="lable">BAID</span>
     <span id="menu">
-      <span id="homepage_tab" class="tab"><a href="#">Homepage</a></span>
+      <span id="home_tab" class="tab"><a href="#">Home</a></span>
+      <span id="about_tab" class="tab"> <a href="#">About</a></span>
       <span id="news_tab" class="tab"><a href="#">News</a></span>
-      <span id="about_tab" class="tab"> <a href="#">About Us</a></span>
       <span id="gallery_tab" class="tab"><a href="#">Gallery</a></span>
-      <input>
+      <input id="search_bar" />
     </span>
   </div>
 </template>
@@ -56,16 +56,16 @@ export default {
 }
 
 .tab:hover {
-  background-color: #294866;
+  background-color: #2b537a;
 }
 .tab a {
   text-decoration: none;
   color: #ffffff;
 }
 
-input {
-  border-radius: 5px;
-  border: none;
+#search_bar {
+  border-radius: 8px;
+  border: 1px solid #ccc;
   background: #ffffff;
   width: 200px;
   height: 36px;

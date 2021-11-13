@@ -1,6 +1,6 @@
 import {createRouter, createWebHistory} from "vue-router";
 import Index from './components/Index.vue'
-import Events from "./components/Events.vue";
+import News from "./components/News.vue";
 import About from "./components/About.vue";
 import Err404 from "./components/Err404.vue";
 import Err5xx from "./components/Err5xx.vue";
@@ -14,9 +14,9 @@ const Router = createRouter({
             component: Index
         },
         {
-            path: '/events',
-            name: "Events",
-            component: Events
+            path: '/news',
+            name: "News",
+            component: News
         },
         {
             path: '/about',

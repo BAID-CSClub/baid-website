@@ -4,7 +4,7 @@
 
 <script>
 export default {
-  name: "Events"
+  name: "News"
 }
 </script>
 
