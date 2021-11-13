@@ -1,16 +1,23 @@
 <template>
-  <h1>That's index!</h1>
+  <Header />
+  <h1>{{ title }}</h1>
 </template>
 
 <script>
-export default {
-  name: "Index.vue",
-  setup() {
+import Header from "./Header.vue";
 
-  }
-}
+export default {
+  name: "Index",
+  components: {
+    Header,
+  },
+  data() {
+    return {
+      title: "欢迎来到北京中学国际部",
+    };
+  },
+};
 </script>
 
 <style scoped>
-
 </style>

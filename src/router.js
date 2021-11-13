@@ -39,7 +39,7 @@ const Router = createRouter({
             component: Err5xx
         },
         {
-            path: '*',
+            path: '/.*',
             name: "NotFound",
             redirect: '/error/404'
         }
