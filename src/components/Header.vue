@@ -64,11 +64,11 @@ export default {
 }
 
 input {
-  border-radius: 2px;
+  border-radius: 5px;
   border: none;
   background: #ffffff;
   width: 200px;
-  height: 30px;
+  height: 36px;
   padding: 0px;
   margin-left: 12px;
 }
