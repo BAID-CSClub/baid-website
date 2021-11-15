@@ -1,13 +1,20 @@
 <template>
-
+  <Header />
+  <h1>GALLERY</h1>
+  <Footer />
 </template>
 
 <script>
+import Header from "./Header.vue";
+import Footer from "./Footer.vue";
+
 export default {
-  name: "Gallery"
-}
+  components: {
+    Header,
+    Footer,
+  },
+};
 </script>
 
 <style scoped>
-
 </style>

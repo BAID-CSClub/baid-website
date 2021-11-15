@@ -1,11 +1,19 @@
 <template>
-
+  <Header />
+  <h1>NEWS</h1>
+  <Footer />
 </template>
 
 <script>
+import Header from "./Header.vue";
+import Footer from "./Footer.vue";
+
 export default {
-  name: "News"
-}
+  components: {
+    Header,
+    Footer,
+  },
+};
 </script>
 
 <style scoped>

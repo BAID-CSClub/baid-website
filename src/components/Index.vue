@@ -7,12 +7,7 @@
   <h1>News</h1>
   <hr />
   <h1>Gallery</h1>
-  <Footer
-    :ICP="ICP"
-    :copyright="copyright"
-    :address="address"
-    :contact="contact"
-  />
+  <Footer />
 </template>
 
 <script>
@@ -20,7 +15,6 @@ import Header from "./Header.vue";
 import Footer from "./Footer.vue";
 
 export default {
-  name: "Index",
   components: {
     Header,
     Footer,

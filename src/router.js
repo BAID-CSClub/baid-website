@@ -1,4 +1,4 @@
-import {createRouter, createWebHistory} from "vue-router";
+import { createRouter, createWebHistory } from "vue-router";
 import Index from './components/Index.vue'
 import News from "./components/News.vue";
 import About from "./components/About.vue";
@@ -29,7 +29,7 @@ const Router = createRouter({
             component: Gallery
         },
         {
-            path: '/error/404',
+            path: '/*',
             name: 'Err404',
             component: Err404,
         },
@@ -37,11 +37,6 @@ const Router = createRouter({
             path: '/error/500',
             name: 'Err5xx',
             component: Err5xx
-        },
-        {
-            path: '/.*',
-            name: "NotFound",
-            redirect: '/error/404'
         }
     ]
 

@@ -1,11 +1,19 @@
 <template>
-  <h1>That's About</h1>
+  <Header />
+  <h1>ABOUT</h1>
+  <Footer />
 </template>
 
 <script>
+import Header from "./Header.vue";
+import Footer from "./Footer.vue";
+
 export default {
-  name: "About"
-}
+  components: {
+    Header,
+    Footer,
+  },
+};
 </script>
 
 <style scoped>
