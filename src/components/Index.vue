@@ -1,6 +1,10 @@
 <template>
-  <Header />
-  <h1>{{ title }}</h1>
+  <div id="background">
+    <Header />
+    <div id="main">
+      <h1 id="title">{{ title }}</h1>
+    </div>
+  </div>
   <hr />
   <h1>About</h1>
   <hr />
@@ -22,15 +26,25 @@ export default {
   data() {
     return {
       title: "欢迎来到北京中学国际部",
-      ICP: "京ICP备13051651号-1",
-      copyright: "北京中学版权所有 © 2014 BJZX All Rights Reserved.",
-      address: "地址：北京市朝阳区西坝河东里1号",
-      contact:
-        "联系电话： 010-50981098（西坝河校区） 010-50951290（东坝南校区）",
     };
   },
 };
 </script>
 
 <style scoped>
+#main {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 600px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#background {
+  background: url("../assets/main.jpg") center no-repeat;
+  background-size: cover;
+}
+#title {
+  margin: auto;
+}
 </style>
