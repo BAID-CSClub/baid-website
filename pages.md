@@ -41,4 +41,4 @@
 
 ## 这些页面在哪里?
 ### 路由表位于 _/src/router.js_
-### 路由页面位于 _/src/components_
+### 路由页面位于 _/src/views/_

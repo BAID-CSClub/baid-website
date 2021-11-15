@@ -1,10 +1,10 @@
 import { createRouter, createWebHistory } from "vue-router";
-import Index from './components/Index.vue'
-import News from "./components/News.vue";
-import About from "./components/About.vue";
-import Err404 from "./components/Err404.vue";
-import Err5xx from "./components/Err5xx.vue";
-import Gallery from "./components/Gallery.vue";
+import Index from './views/Index.vue'
+import News from "./views/News.vue";
+import About from "./views/About.vue";
+import Err404 from "./views/Err404.vue";
+import Err5xx from "./views/Err5xx.vue";
+import Gallery from "./views/Gallery.vue";
 const Router = createRouter({
     history: createWebHistory(),
     routes: [

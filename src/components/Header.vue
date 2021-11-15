@@ -4,11 +4,19 @@
       <img id="logo" src="../assets/logo_white.png" />
     </span>
     <span id="menu">
-      <span id="home_tab" class="tab"><router-link to="/">Home</router-link></span>
-      <span id="about_tab" class="tab"> <router-link to="/about">About</router-link></span>
-      <span id="news_tab" class="tab"><router-link to="/news">News</router-link></span>
-      <span id="gallery_tab" class="tab"><router-link to="/gallery">Gallery</router-link></span>
-      <input id="search_bar" placeholder="Search..."/>
+      <span id="home_tab" class="tab"
+        ><router-link to="/">Home</router-link></span
+      >
+      <span id="about_tab" class="tab">
+        <router-link to="/about">About</router-link></span
+      >
+      <span id="news_tab" class="tab"
+        ><router-link to="/news">News</router-link></span
+      >
+      <span id="gallery_tab" class="tab"
+        ><router-link to="/gallery">Gallery</router-link></span
+      >
+      <input id="search_bar" placeholder="Search..." />
     </span>
   </div>
 </template>
@@ -73,6 +81,5 @@
   padding-right: 8px;
   margin-left: 14px;
   font-size: 12pt;
-
 }
 </style>
