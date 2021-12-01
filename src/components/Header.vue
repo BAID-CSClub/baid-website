@@ -1,20 +1,14 @@
 <template>
   <div id="frame">
     <span id="lable">
-      <img id="logo" src="../assets/logo_white.png" />
+      <img id="logo" src="../assets/logo.png" />
     </span>
     <span id="menu">
-      <span id="home_tab" class="tab"
-        ><router-link to="/">Home</router-link></span
-      >
-      <span id="about_tab" class="tab">
-        <router-link to="/about">About</router-link></span
-      >
-      <span id="news_tab" class="tab"
-        ><router-link to="/news">News</router-link></span
-      >
-      <span id="gallery_tab" class="tab"
-        ><router-link to="/gallery">Gallery</router-link></span
+      <router-link id="home_tab" class="tab" to="/">Home</router-link>
+      <router-link id="about_tab" class="tab" to="/about">About</router-link>
+      <router-link id="news_tab" class="tab" to="/news">News</router-link>
+      <router-link id="gallery_tab" class="tab" to="/gallery"
+        >Gallery</router-link
       >
       <input id="search_bar" placeholder="Search..." />
     </span>
@@ -26,7 +20,7 @@
 
 <style scoped>
 #frame {
-  background-color: #2464a4;
+  background-color: #ffffff;
   height: auto;
   width: auto;
   overflow: auto;
@@ -36,6 +30,7 @@
   box-shadow: grey 2px 2px 10px;
   padding-left: 24px;
   padding-right: 24px;
+  border-bottom: 5px solid #2464a4;
 }
 
 #logo {
@@ -66,9 +61,9 @@
 .tab:hover {
   background-color: #2b537a;
 }
-.tab a {
+.tab {
   text-decoration: none;
-  color: #ffffff;
+  color: #444444;
 }
 
 #search_bar {
