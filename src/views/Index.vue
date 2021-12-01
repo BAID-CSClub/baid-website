@@ -1,21 +1,21 @@
 <template>
   <div id="background">
-    <HeaderVue />
     <div id="main">
       <h1 id="title">{{ title }}</h1>
     </div>
   </div>
-  <hr />
-  <HomeAbout></HomeAbout>
-  <hr />
-  <HomeNewsVue></HomeNewsVue>
-  <hr />
-  <HomeGallery></HomeGallery>
-  <FooterVue />
+  <div class="main-area">
+    <hr />
+    <HomeAbout></HomeAbout>
+    <hr />
+    <HomeNewsVue></HomeNewsVue>
+    <hr />
+    <HomeGallery></HomeGallery>
+  </div>
+
 </template>
 
 <script>
-import FooterVue from "../components/Footer.vue";
 import HeaderVue from "../components/Header.vue";
 import HomeAboutVue from "../components/HomeAbout.vue";
 import HomeNewsVue from "../components/HomeNews.vue";
@@ -26,7 +26,6 @@ import HomeGallery from "../components/HomeGallery.vue";
 export default {
   components: {
     HeaderVue,
-    FooterVue,
     HomeAboutVue,
     HomeNewsVue,
     HomeGalleryVue,
@@ -56,5 +55,10 @@ export default {
 }
 #title {
   margin: auto;
+}
+.main-area {
+  margin: auto;
+  max-width: 1200px;
+  width: 100%;
 }
 </style>

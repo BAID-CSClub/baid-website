@@ -1,7 +1,5 @@
 <template>
-  <HeaderVue />
   <h1>GALLERY</h1>
-  <FooterVue />
 </template>
 
 <script>
