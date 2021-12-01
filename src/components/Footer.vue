@@ -10,7 +10,7 @@ defineProps({
 </script>
 
 <template>
-<body>
+<div>
     <footer>
       <FooterIcon>
         <img id="ICON" src="../assets/footer_logo.png">
@@ -24,7 +24,7 @@ defineProps({
           <box style="border-right:solid 2px grey;">{{msg6}}</box>
       </Text>
     </footer>
-</body>
+</div>
 </template>
 
 <style scoped>

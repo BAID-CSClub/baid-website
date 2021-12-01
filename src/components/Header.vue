@@ -27,7 +27,7 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  box-shadow: grey 2px 2px 10px;
+  box-shadow: #333333 0 2px 10px;
   padding-left: 24px;
   padding-right: 24px;
   /*border-bottom: 5px solid #2464a4;*/
