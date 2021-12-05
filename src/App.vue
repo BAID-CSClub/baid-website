@@ -23,12 +23,13 @@ body {
   margin: 0;
   overflow-x: hidden;
 }
-body::-webkit-scrollbar {
+html::-webkit-scrollbar {
   width: 4px;
   position: absolute;
   /*height: 4px;*/
   display: none;
 }
+
 .fade-enter-active,
 .fade-leave-active {
   transition: opacity 0.5s ease;
