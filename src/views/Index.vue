@@ -5,14 +5,12 @@
     </div>
   </div>
   <div class="main-area">
-    <hr />
     <HomeAbout></HomeAbout>
-    <hr />
+    <hr style="margin: 0px" />
     <HomeNewsVue></HomeNewsVue>
     <hr />
     <HomeGallery></HomeGallery>
   </div>
-
 </template>
 
 <script>

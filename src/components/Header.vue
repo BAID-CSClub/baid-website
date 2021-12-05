@@ -50,19 +50,17 @@
 }
 
 .tab {
-  transition: all .3s;
+  transition: all 0.3s;
   font-size: 16pt;
   padding: 24px 14px;
   width: 80px;
+  text-decoration: none;
+  color: #444444;
 }
 
 .tab:hover {
   background-color: #2b537a;
   color: #dadada;
-}
-.tab {
-  text-decoration: none;
-  color: #444444;
 }
 
 #search_bar {
@@ -78,8 +76,7 @@
   outline: 1px solid gray;
   border: none;
   box-shadow: 0 0 5px white;
-  transition: all .3s;
-
+  transition: all 0.3s;
 }
 #search_bar:focus {
   outline-color: #2464a4;
