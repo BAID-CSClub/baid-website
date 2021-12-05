@@ -5,7 +5,9 @@ import FooterVue from "./components/Footer.vue";
 
 <template>
   <HeaderVue />
-  <router-view></router-view>
+  <transition name="fade">
+    <router-view></router-view>
+  </transition>
   <FooterVue
     msg1="京  ICP备13051651号-1"
     msg2="北京中学版权所有"
@@ -17,15 +19,24 @@ import FooterVue from "./components/Footer.vue";
 </template>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
 body {
   margin: 0;
   overflow-x: hidden;
 }
+body::-webkit-scrollbar {
+  width: 4px;
+  position: absolute;
+  /*height: 4px;*/
+  display: none;
+}
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
 </style>

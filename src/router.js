@@ -1,3 +1,4 @@
+
 import { createRouter, createWebHistory } from "vue-router";
 import Index from './views/Index.vue'
 import News from "./views/News.vue";

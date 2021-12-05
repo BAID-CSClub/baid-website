@@ -26,12 +26,25 @@
   justify-content: flex-start;
   height: auto;
 }
+
+@media screen and (max-width: 900px) {
+  #home_about {
+    display: block;
+  }
+  #slogan {
+    height: 100px;
+    line-height: 100px;
+    background-color: #333333;
+    color: #d3e5ff;
+  }
+}
 #slogan {
-  font-size: 18pt;
+  font-size: 20pt;
   font-weight: bold;
   text-align: center;
   align-content: center;
   flex: 1;
+  letter-spacing: 2px;
 }
 
 #information {
@@ -42,16 +55,30 @@
   color: white;
 }
 #container {
-  padding: 16px;
+  padding: 50px;
 }
 .about_text {
   padding: 4px 0;
+  line-height: 30px;
+  color: #e0e0e0;
 }
 #about_title {
   font-size: 16pt;
   font-weight: bold;
+  margin-bottom: 16px;
 }
 .link {
-  color: white;
+  color: #aed5ff;
+  text-decoration: none;
+  transition: all .2s ease-in-out;
+  display: block;
+  margin-top: 10px;
+}
+
+.link:hover {
+  color: #cee5ff;
+}
+.link:active {
+  color: #64b3ff;
 }
 </style>

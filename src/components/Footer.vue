@@ -15,7 +15,7 @@ defineProps({
       <FooterIcon>
         <img id="ICON" src="../assets/footer_logo.png">
       </FooterIcon>
-      <Text>
+      <Text v-cloak>
           <box>{{msg1}}</box>
           <box>{{msg2}}</box>
           <box>{{msg3}}</box>
@@ -82,4 +82,10 @@ defineProps({
             transform:translateY(25px)
         }
     }
+
+</style>
+<style>
+[v-cloak] {
+  display: none;
+}
 </style>

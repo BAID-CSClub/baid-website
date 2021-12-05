@@ -1,15 +1,17 @@
 <template>
-  <div id="background">
-    <div id="main">
-      <h1 id="title">{{ title }}</h1>
+  <div>
+    <div id="background">
+      <div id="main">
+        <h1 id="title">{{ title }}</h1>
+      </div>
     </div>
-  </div>
-  <div class="main-area">
-    <HomeAbout></HomeAbout>
-    <hr style="margin: 0px" />
-    <HomeNewsVue></HomeNewsVue>
-    <hr />
-    <HomeGallery></HomeGallery>
+    <div class="main-area">
+      <HomeAbout></HomeAbout>
+      <hr style="margin: 0" />
+      <HomeNewsVue></HomeNewsVue>
+      <hr />
+      <HomeGallery></HomeGallery>
+    </div>
   </div>
 </template>
 
@@ -53,6 +55,7 @@ export default {
 }
 #title {
   margin: auto;
+  letter-spacing: 2px;
 }
 .main-area {
   margin: auto;
