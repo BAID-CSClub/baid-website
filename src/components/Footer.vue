@@ -47,7 +47,7 @@ defineProps({
     Text{
         display: inline-block;
         max-width: 64%;
-        min-width:700px;
+        /*min-width:700px;*/
         position: relative;
         height: fit-content;
         text-align: center;
