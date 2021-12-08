@@ -22,6 +22,7 @@ import FooterVue from "./components/Footer.vue";
 body {
   margin: 0;
   overflow-x: hidden;
+  font-family: 'Source Han Sans SC', Arial, Helvetica, sans-serif;
 }
 html::-webkit-scrollbar {
   width: 4px;
@@ -38,6 +39,10 @@ html::-webkit-scrollbar {
 .fade-enter-from,
 .fade-leave-to {
   opacity: 0;
+}
+@font-face {
+  font-family: 'Source Han Sans SC';
+  src: url('./fonts/SourceHanSansSC-VF.otf');
 }
 
 </style>

@@ -46,7 +46,7 @@ export default {
   height: 600px;
   color: white;
   display: flex;
-  align-items: center;
+  align-items: right;
   justify-content: center;
 }
 #background {

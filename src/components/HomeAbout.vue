@@ -48,7 +48,7 @@
 }
 
 #information {
-  background-color: #2464a4;
+  background-color: #2c3e50;
   text-align: left;
   height: 100%;
   flex: 1;
