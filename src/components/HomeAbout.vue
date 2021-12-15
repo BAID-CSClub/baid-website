@@ -14,6 +14,11 @@
       </div>
     </div>
   </div>
+  <div id="principle">
+    <div id="principle_speech"></div>
+    <div id="principle_information"></div>
+
+  </div>
 </template>
 
 <script>
@@ -25,6 +30,10 @@
   align-items: center;
   justify-content: flex-start;
   height: auto;
+}
+
+#principle {
+  display: flex
 }
 
 @media screen and (max-width: 900px) {
@@ -60,10 +69,11 @@
 .about_text {
   padding: 4px 0;
   line-height: 30px;
+  font-size: 14pt;
   color: #e0e0e0;
 }
 #about_title {
-  font-size: 16pt;
+  font-size: 24pt;
   font-weight: bold;
   margin-bottom: 16px;
 }
