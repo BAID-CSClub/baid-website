@@ -18,6 +18,7 @@
 </template>
 
 <script setup>
+
 const news = [
   {
 
@@ -26,6 +27,12 @@ const news = [
 </script>
 
 <style scoped>
+.main {
+  margin-bottom: 20px;
+}
+img {
+  object-fit: cover;
+}
 .n-title {
   font-size: 40px;
   margin-top: 0;
@@ -36,8 +43,10 @@ const news = [
 }
 .n-note {
   font-size: 20px;
-  line-height: 20px;
+  line-height: 30px;
   text-overflow: ellipsis;
+  overflow: hidden;
+  max-height: 300px;
 }
 .box > img {
   width: 50%;

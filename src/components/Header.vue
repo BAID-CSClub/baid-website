@@ -1,7 +1,7 @@
 <template>
   <div id="frame">
     <span id="label">
-      <img id="logo" src="../assets/logo.png"  alt=""/>
+      <img id="logo" src="../assets/logo.png"  alt="" @click="$router.push({name: 'Index'})"/>
     </span>
     <span id="menu">
       <router-link id="home_tab" class="tab" to="/" >Home</router-link>

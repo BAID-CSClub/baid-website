@@ -12,16 +12,16 @@ defineProps({
 <template>
 <div>
     <footer>
-      <FooterIcon>
-        <img id="ICON" src="../assets/footer_logo.png">
-      </FooterIcon>
+      <div class="FooterIcon">
+        <img id="ICON" src="../assets/footer_logo.png" alt="">
+      </div>
       <Text v-cloak>
-          <box>{{msg1}}</box>
-          <box>{{msg2}}</box>
-          <box>{{msg3}}</box>
-          <box>{{msg4}}</box>
-          <box>{{msg5}}</box>
-          <box style="border-right:solid 2px grey;">{{msg6}}</box>
+          <div class="box">{{msg1}}</div>
+          <div class="box">{{msg2}}</div>
+          <div class="box">{{msg3}}</div>
+          <div class="box">{{msg4}}</div>
+          <div class="box">{{msg5}}</div>
+          <div class="box" style="border-right:solid 2px grey;">{{msg6}}</div>
       </Text>
     </footer>
 </div>
@@ -29,17 +29,17 @@ defineProps({
 
 <style scoped>
     footer{
-        position: relative;
+        /*position: relative;*/
         text-align: center;
-        margin: 0px;
+        margin: 0;
         width:94vw;
         background-color: #2d2d2d;
         min-height: 180px;
         color: rgb(228, 228, 228);
-        padding: 0px 3vw 50px 3vw;
+        padding: 0 3vw 50px 3vw;
         border-top: solid 12px rgb(35, 35, 35);
     }
-    FooterIcon{
+    .FooterIcon{
         text-align: center;
         display: inline-block;
         height: 100%;
@@ -52,7 +52,7 @@ defineProps({
         height: fit-content;
         text-align: center;
     }
-    box{
+    .box{
         text-align: center;
         font-size: 16px;
         padding-left: 10px;
