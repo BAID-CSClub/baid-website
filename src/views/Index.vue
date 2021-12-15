@@ -9,7 +9,7 @@
       <HomeAbout></HomeAbout>
       <hr style="margin: 0" />
       <HomeNewsVue></HomeNewsVue>
-      <hr />
+<!--      <hr />-->
       <HomeGallery :images="['/src/assets/1.jpg', '/src/assets/2.jpg', '/src/assets/3.jpg', '/src/assets/4.jpg', '/src/assets/5.jpg', '/src/assets/2.jpg']"/>
     </div>
   </div>
@@ -57,7 +57,7 @@ export default {
   margin: auto;
   letter-spacing: 2px;
 }
-.main-area {
+.main, hr {
   margin: auto;
   max-width: 1200px;
   width: 95%;
