@@ -15,9 +15,10 @@
     </div>
   </div>
   <div id="principle">
-    <div id="principle_speech"></div>
-    <div id="principle_information"></div>
-
+    <div id="principle_speech">asdkjh</div>
+    <div id="principle_pic">
+      <img class="pic" src="../assets/cherry.png" alt="Cherry" />
+    </div>
   </div>
 </template>
 
@@ -33,9 +34,22 @@
 }
 
 #principle {
-  display: flex
+  display: flex;
+  height: 300px;
 }
+#principle_speech {
+  flex: 4;
+  background-color: #2464a4;
+}
+#principle_pic {
+  flex: 1;
 
+}
+.pic {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
 @media screen and (max-width: 900px) {
   #home_about {
     display: block;
@@ -47,10 +61,12 @@
     color: #d3e5ff;
   }
 }
+
 #slogan {
-  font-size: 20pt;
+  font-size: 22pt;
   font-weight: bold;
   text-align: center;
+  font-style: italic;
   align-content: center;
   flex: 1;
   letter-spacing: 2px;
@@ -80,7 +96,7 @@
 .link {
   color: #aed5ff;
   text-decoration: none;
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   display: block;
   margin-top: 10px;
 }
