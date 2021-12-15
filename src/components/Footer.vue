@@ -15,21 +15,21 @@ defineProps({
       <div class="FooterIcon">
         <img id="ICON" src="../assets/footer_logo.png" alt="">
       </div>
-      <Text v-cloak>
+      <div class="Text" v-cloak>
           <div class="box">{{msg1}}</div>
           <div class="box">{{msg2}}</div>
           <div class="box">{{msg3}}</div>
           <div class="box">{{msg4}}</div>
           <div class="box">{{msg5}}</div>
           <div class="box" style="border-right:solid 2px grey;">{{msg6}}</div>
-      </Text>
+      </div>
     </footer>
 </div>
 </template>
 
 <style scoped>
     footer{
-        /*position: relative;*/
+        position: relative;
         text-align: center;
         margin: 0;
         width:94vw;
@@ -44,10 +44,10 @@ defineProps({
         display: inline-block;
         height: 100%;
     }
-    Text{
+    .Text{
         display: inline-block;
         max-width: 64%;
-        /*min-width:700px;*/
+        min-width:700px;
         position: relative;
         height: fit-content;
         text-align: center;
@@ -75,7 +75,7 @@ defineProps({
             width:100vw;
             padding:0;
         }
-        Text{
+        .Text{
             transform:translateY(-45px);
         }
         #ICON{
