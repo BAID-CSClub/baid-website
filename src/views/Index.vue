@@ -10,7 +10,7 @@
       <hr style="margin: 0" />
       <HomeNewsVue></HomeNewsVue>
       <hr />
-      <HomeGallery></HomeGallery>
+      <HomeGallery :images="['/src/assets/1.jpg', '/src/assets/2.jpg', '/src/assets/3.jpg', '/src/assets/4.jpg', '/src/assets/5.jpg', '/src/assets/2.jpg']"/>
     </div>
   </div>
 </template>
@@ -46,7 +46,7 @@ export default {
   height: 600px;
   color: white;
   display: flex;
-  align-items: right;
+  /*align-items: right;*/
   justify-content: center;
 }
 #background {
