@@ -60,6 +60,6 @@ export default {
 .main-area {
   margin: auto;
   max-width: 1200px;
-  width: 95%;
+  width: 100%;
 }
 </style>
