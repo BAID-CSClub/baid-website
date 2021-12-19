@@ -1,16 +1,23 @@
 <template>
   <div>
     <div id="background">
-      <div id="main">
+      <div id="head">
         <h1 id="title">{{ title }}</h1>
       </div>
     </div>
-    <div class="main-area">
+    <div>
       <HomeAbout></HomeAbout>
-      <hr style="margin: 0" />
       <HomeNewsVue></HomeNewsVue>
-<!--      <hr />-->
-      <HomeGallery :images="['/src/assets/1.jpg', '/src/assets/2.jpg', '/src/assets/3.jpg', '/src/assets/4.jpg', '/src/assets/5.jpg', '/src/assets/2.jpg']"/>
+      <HomeGallery
+        :images="[
+          '/src/assets/1.jpg',
+          '/src/assets/2.jpg',
+          '/src/assets/3.jpg',
+          '/src/assets/4.jpg',
+          '/src/assets/5.jpg',
+          '/src/assets/2.jpg',
+        ]"
+      />
     </div>
   </div>
 </template>
@@ -41,23 +48,25 @@ export default {
 </script>
 
 <style scoped>
-#main {
+#head {
   background-color: rgba(0, 0, 0, 0.5);
-  height: 600px;
+  height: calc(100vh);
   color: white;
   display: flex;
-  /*align-items: right;*/
   justify-content: center;
 }
 #background {
   background: url("../assets/main.jpg") center no-repeat;
   background-size: cover;
+  width: 100%;
+  height: 100%;
 }
 #title {
   margin: auto;
   letter-spacing: 2px;
 }
-.main, hr {
+.main,
+hr {
   margin: auto;
   max-width: 1200px;
   width: 100%;

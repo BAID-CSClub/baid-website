@@ -1,9 +1,14 @@
 <template>
-  <div id="home_about">
-    <div id="slogan"><span>Better Me, Better World</span></div>
-    <div id="information">
-      <div id="container">
-        <div id="about_title">关于北京中学国际部</div>
+  <div id="bg">
+    <div id="container">
+      <div id="video">
+        <video width="480" height="270" controls>
+          <source src="../assets/Rocket.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div id="information">
+        <div id="about_title">这里是北京中学国际部</div>
         <div class="about_text">
           北京中学，与首都同名。2013年，经北京市政府批准、由朝阳区政府主办的北京中学正式建校，备受社会各界关注。
         </div>
@@ -15,72 +20,51 @@
     </div>
   </div>
   <div id="principle">
-    <div id="principle_speech">asdkjh</div>
+    <div id="principle_speech">
+      <div id="left">“</div>
+      <div id="text">STH FROM OUR DEAR CHERRY</div>
+      <div id="right">”</div>
+      <div id="principle_info">——周慧 北京中学国际部校长</div>
+    </div>
     <div id="principle_pic">
       <img class="pic" src="../assets/cherry.png" alt="Cherry" />
     </div>
   </div>
+  <div id="school_info"></div>
 </template>
 
 <script>
 </script>
 
 <style scoped>
-#home_about {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  height: auto;
+#bg {
+  background: url("../assets/HBW05519.JPG") center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
-#principle {
-  display: flex;
-  height: 300px;
-}
-#principle_speech {
-  flex: 4;
-  background-color: #2464a4;
-}
-#principle_pic {
-  flex: 1;
-
-}
-.pic {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-}
-@media screen and (max-width: 900px) {
-  #home_about {
-    display: block;
-  }
-  #slogan {
-    height: 100px;
-    line-height: 100px;
-    background-color: #333333;
-    color: #d3e5ff;
-  }
-}
-
-#slogan {
-  font-size: 22pt;
-  font-weight: bold;
-  text-align: center;
-  font-style: italic;
-  align-content: center;
-  flex: 1;
-  letter-spacing: 2px;
-}
-
-#information {
-  background-color: #2c3e50;
-  text-align: left;
-  height: 100%;
-  flex: 1;
-  color: white;
-}
 #container {
+  display: flex;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 800px;
+  align-items: center;
+  justify-content: center;
+}
+#video {
+  flex: 1;
   padding: 50px;
+  padding-left: 100px;
+  text-align: center;
+}
+#information {
+  flex: 1;
+  padding: 50px;
+  padding-right: 100px;
+  text-align: left;
+  color: white;
+  min-width: 400px;
 }
 .about_text {
   padding: 4px 0;
@@ -106,5 +90,46 @@
 }
 .link:active {
   color: #64b3ff;
+}
+
+#principle {
+  display: flex;
+  height: 300px;
+}
+#principle_speech {
+  flex: 4;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  color: #2d2d2d;
+  justify-content: center;
+}
+#principle_pic {
+  flex: 1;
+}
+#left {
+  font-size: 32pt;
+  align-self: flex-start;
+  color: #2464a4;
+  font-weight: bold;
+}
+#text {
+  font-size: 20pt;
+  align-self: center;
+}
+#right {
+  font-size: 32pt;
+  align-self: flex-end;
+  color: #2464a4;
+  font-weight: bold;
+}
+#principle_info {
+  font-size: 16pt;
+  align-self: flex-end;
+}
+.pic {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 </style>

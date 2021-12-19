@@ -27,7 +27,7 @@
 
 #frame {
   background-color: #ffffff;
-  height: auto;
+  height: 80px;
   width: auto;
   overflow: auto;
   display: flex;
@@ -36,6 +36,7 @@
   box-shadow: #333333 0 2px 10px;
   padding-left: 24px;
   padding-right: 24px;
+
   /*border-bottom: 5px solid #2464a4;*/
 }
 
