@@ -1,91 +1,38 @@
-<script setup>
-defineProps({
-  msg1: String,
-  msg2: String,
-  msg3: String,
-  msg4: String,
-  msg5: String,
-  msg6: String
-})
+<script>
+export default {
+  props: ["ICP", "copyright", "address", "contact"],
+};
 </script>
 
 <template>
-<div>
-    <footer>
-      <div class="FooterIcon">
-        <img id="ICON" src="../assets/footer_logo.png" alt="">
-      </div>
-      <div class="Text" v-cloak>
-          <div class="box">{{msg1}}</div>
-          <div class="box">{{msg2}}</div>
-          <div class="box">{{msg3}}</div>
-          <div class="box">{{msg4}}</div>
-          <div class="box">{{msg5}}</div>
-          <div class="box" style="border-right:solid 2px grey;">{{msg6}}</div>
-      </div>
-    </footer>
-</div>
+  <footer>
+    <div>
+      <span>{{ ICP }}</span>
+      <span style="border: none">{{ copyright }}</span>
+    </div>
+    <div>
+      <span>{{ address }}</span>
+      <span style="border: none">{{ contact }}</span>
+    </div>
+  </footer>
 </template>
 
 <style scoped>
-    footer{
-        position: relative;
-        text-align: center;
-        margin: 0;
-        width:94vw;
-        background-color: #2d2d2d;
-        min-height: 180px;
-        color: rgb(228, 228, 228);
-        padding: 0 3vw 50px 3vw;
-        border-top: solid 12px rgb(35, 35, 35);
-    }
-    .FooterIcon{
-        text-align: center;
-        display: inline-block;
-        height: 100%;
-    }
-    .Text{
-        display: inline-block;
-        max-width: 64%;
-        min-width:700px;
-        position: relative;
-        height: fit-content;
-        text-align: center;
-    }
-    .box{
-        text-align: center;
-        font-size: 16px;
-        padding-left: 10px;
-        padding-right: 10px;
-        max-height: 15px;
-        margin: 12px -2.5px 12px 0;
-        border: 2px none grey;
-        border-left-style: solid;
-        white-space: nowrap;
-        line-height: 25px;
-    }
-    #ICON{
-        position: relative;
-        display: inline-block;
-        width: 350px;
-    }
-    @media screen and (min-width: 1100px){
-        footer{
-            height:210px;
-            width:100vw;
-            padding:0;
-        }
-        .Text{
-            transform:translateY(-45px);
-        }
-        #ICON{
-            transform:translateY(25px)
-        }
-    }
-
-</style>
-<style>
-[v-cloak] {
-  display: none;
+footer {
+  text-align: center;
+  background-color: #2d2d2d;
+  color: #ffffff;
+  padding: 24px 2% 24px 2%;
+  border-top: solid 12px rgb(35, 35, 35);
+}
+span {
+  text-align: center;
+  font-size: 16px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-right: solid 2px grey;
+}
+div {
+  margin: 2px;
 }
 </style>

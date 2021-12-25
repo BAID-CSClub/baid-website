@@ -4,10 +4,10 @@
       <img id="logo" src="../assets/logo.png"  alt="" @click="$router.push({name: 'Index'})"/>
     </span>
     <span id="menu">
-      <router-link id="home_tab" class="tab" to="/" >Home</router-link>
-      <router-link id="about_tab" class="tab" to="/about">About</router-link>
-      <router-link id="news_tab" class="tab" to="/news">News</router-link>
-      <router-link id="gallery_tab" class="tab" to="/gallery">Gallery</router-link>
+      <router-link id="home_tab" class="tab" to="/" >首页</router-link>
+      <router-link id="about_tab" class="tab" to="/about">关于我们</router-link>
+      <router-link id="news_tab" class="tab" to="/news">新闻</router-link>
+      <router-link id="gallery_tab" class="tab" to="/gallery">照片墙</router-link>
       <input id="search_bar" placeholder="Search..." />
       <span class="menu-icon">
         <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg>
@@ -59,7 +59,7 @@
   transition: all 0.3s;
   font-size: 16pt;
   padding: 25px 14px;
-  width: 80px;
+  width: 100px;
   text-decoration: none;
   color: #444444;
   text-align: center;
@@ -71,13 +71,13 @@
   width: 0;
   background-color: #aed5ff;
   height: 5px;
-  margin-left: 25px;
+  margin-left: 30px;
   margin-top: 5px;
   transition: width .3s ease-in-out;
   border-radius: 3px;
 }
 .router-link-active::after {
-  width: 30px;
+  width: 40px;
 }
 
 .tab:hover {

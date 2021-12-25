@@ -19,7 +19,7 @@
       </div>
     </div>
   </div>
-  <div id="principle">
+  <div id="principle" class="main">
     <div id="principle_speech">
       <div id="left">“</div>
       <div id="text">STH FROM OUR DEAR CHERRY</div>
@@ -30,7 +30,48 @@
       <img class="pic" src="../assets/cherry.png" alt="Cherry" />
     </div>
   </div>
-  <div id="school_info"></div>
+  <div id="school_info_title" class="main">了解北京中学国际部</div>
+  <div id="school_info" class="main">
+    <div id="idea" class="info">
+      <div class="cover">
+        <div class="info_container">
+          <div class="info_title">理念</div>
+          <div class="info_text">
+            2017年，为了满足部分学生和家长的多元化升学需求，搭建成长的立交桥，北京中学组建国际方向班级。学校坚持中国立场、开放多元、融合创新。
+            <br />
+            <br />
+            <router-link class="link" to="/about">了解更多</router-link>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="environment" class="info">
+      <div class="cover">
+        <div class="info_container">
+          <div class="info_title">环境</div>
+          <div class="info_text">
+            2017年，为了满足部分学生和家长的多元化升学需求，搭建成长的立交桥，北京中学组建国际方向班级。学校坚持中国立场、开放多元、融合创新。
+            <br />
+            <br />
+            <router-link class="link" to="/about">了解更多</router-link>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="faculty" class="info">
+      <div class="cover">
+        <div class="info_container">
+          <div class="info_title">师资</div>
+          <div class="info_text">
+            2017年，为了满足部分学生和家长的多元化升学需求，搭建成长的立交桥，北京中学组建国际方向班级。学校坚持中国立场、开放多元、融合创新。
+            <br />
+            <br />
+            <router-link class="link" to="/about">了解更多</router-link>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -42,13 +83,14 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  height: 800px;
 }
 
 #container {
   display: flex;
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.5);
-  height: 800px;
+  height: 100%;
   align-items: center;
   justify-content: center;
 }
@@ -131,5 +173,61 @@
   object-fit: cover;
   width: 100%;
   height: 100%;
+}
+
+#school_info {
+  display: flex;
+}
+#idea {
+  background: url("../assets/HBW05519.JPG") center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#environment {
+  background: url("../assets/HBW05519.JPG") center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#faculty {
+  background: url("../assets/HBW05519.JPG") center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#school_info_title {
+  margin: auto;
+  padding: 40px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 24pt;
+}
+.info_container {
+  padding: 40px;
+}
+.cover {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+}
+.info {
+  flex: 1;
+  height: 500px;
+  margin: 20px;
+  color: white;
+}
+.info_title {
+  font-weight: bold;
+  font-size: 20pt;
+  margin-bottom: 16px;
+  text-align: center;
+}
+.info_text {
+  margin-top: 16px;
+  font-size: 14pt;
+  line-height: 150%;
+}
+
+.main {
+  max-width: 1200px;
+  margin: auto;
 }
 </style>

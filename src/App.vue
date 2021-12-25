@@ -9,12 +9,10 @@ import FooterVue from "./components/Footer.vue";
     <router-view></router-view>
   </transition>
   <FooterVue
-    msg1="京  ICP备13051651号-1"
-    msg2="北京中学版权所有"
-    msg3="© 2014 BJZX All Rights Reserved."
-    msg4="地址：北京市朝阳区西坝河东里1号"
-    msg5="联系电话： 010-50981098（西坝河校区）"
-    msg6="010-50951290（东坝南校区）"
+    ICP="京ICP备13051651号 - 1"
+    copyright="北京中学版权所有 © 2014 BJZX All Rights Reserved."
+    address="地址：北京市朝阳区西坝河东里1号"
+    contact="联系电话： 010-50981098（西坝河校区） 010-50951290（东坝南校区）"
   />
 </template>
 
@@ -22,7 +20,7 @@ import FooterVue from "./components/Footer.vue";
 body {
   margin: 0;
   overflow-x: hidden;
-  font-family: 'Source Han Sans SC', Arial, Helvetica, sans-serif;
+  font-family: "Source Han Sans SC", Arial, Helvetica, sans-serif;
 }
 html::-webkit-scrollbar {
   width: 4px;
@@ -41,8 +39,7 @@ html::-webkit-scrollbar {
   opacity: 0;
 }
 @font-face {
-  font-family: 'Source Han Sans SC';
-  src: url('./fonts/SourceHanSansSC-VF.otf.woff2');
+  font-family: "Source Han Sans SC";
+  src: url("./fonts/SourceHanSansSC-VF.otf");
 }
-
 </style>
