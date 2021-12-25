@@ -50,7 +50,7 @@ export default {
 <style scoped>
 #head {
   background-color: rgba(0, 0, 0, 0.5);
-  height: calc(100vh);
+  height: calc(100vh - 75px);
   color: white;
   display: flex;
   justify-content: center;

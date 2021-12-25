@@ -27,7 +27,6 @@
 
 #frame {
   background-color: #ffffff;
-  height: 80px;
   width: auto;
   overflow: auto;
   display: flex;
@@ -59,7 +58,7 @@
 .tab {
   transition: all 0.3s;
   font-size: 16pt;
-  padding: 24px 14px;
+  padding: 25px 14px;
   width: 80px;
   text-decoration: none;
   color: #444444;

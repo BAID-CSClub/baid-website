@@ -42,7 +42,7 @@ html::-webkit-scrollbar {
 }
 @font-face {
   font-family: 'Source Han Sans SC';
-  src: url('./fonts/SourceHanSansSC-VF.otf');
+  src: url('./fonts/SourceHanSansSC-VF.otf.woff2');
 }
 
 </style>
