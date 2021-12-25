@@ -1,30 +1,44 @@
 <template>
   <div id="frame">
     <span id="label">
-      <img id="logo" src="../assets/logo.png"  alt="" @click="$router.push({name: 'Index'})"/>
+      <img
+        id="logo"
+        src="../assets/logo.png"
+        alt=""
+        @click="$router.push({ name: 'Index' })"
+      />
     </span>
     <span id="menu">
-      <router-link id="home_tab" class="tab" to="/" >首页</router-link>
+      <router-link id="home_tab" class="tab" to="/">首页</router-link>
       <router-link id="about_tab" class="tab" to="/about">关于我们</router-link>
       <router-link id="news_tab" class="tab" to="/news">新闻</router-link>
-      <router-link id="gallery_tab" class="tab" to="/gallery">照片墙</router-link>
+      <router-link id="gallery_tab" class="tab" to="/gallery"
+        >照片墙</router-link
+      >
       <input id="search_bar" placeholder="Search..." />
       <span class="menu-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true"
+          role="img"
+          viewBox="0 0 448 512"
+          class="icon"
+        >
+          <path
+            fill="currentColor"
+            d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"
+          ></path>
+        </svg>
       </span>
     </span>
-    <div class="menu-mask">
-
-    </div>
+    <div class="menu-mask"></div>
   </div>
 </template>
 
 <script setup>
-
 </script>
 
 <style scoped>
-
 #frame {
   background-color: #ffffff;
   width: auto;
@@ -65,7 +79,7 @@
   text-align: center;
 }
 .tab::after {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   width: 0;
@@ -73,7 +87,7 @@
   height: 5px;
   margin-left: 30px;
   margin-top: 5px;
-  transition: width .3s ease-in-out;
+  transition: width 0.3s ease-in-out;
   border-radius: 3px;
 }
 .router-link-active::after {
@@ -83,12 +97,11 @@
 .tab:hover {
   background-color: #4776a1;
   color: #ffffff;
-  transition: background-color .3s ease-in-out, color .3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 .tab:active {
   background-color: #2b537a;
   color: #d2d2d2;
-
 }
 
 #search_bar {
@@ -128,7 +141,7 @@
   color: #595959;
   margin-left: 25px;
   padding-bottom: 3px;
-  transition: all .2s;
+  transition: all 0.2s;
 }
 @media (max-width: 900px) {
   .tab {
