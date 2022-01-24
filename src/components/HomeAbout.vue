@@ -3,18 +3,15 @@
     <div id="container">
       <div id="video">
         <video width="480" height="270" controls>
-          <source src="../assets/Rocket.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
+          <source src="../assets/Rocket.mp4" type="video/mp4" />Your browser does not support the video tag.
         </video>
       </div>
       <div id="information">
         <div id="about_title">这里是北京中学国际部</div>
-        <div class="about_text">
-          北京中学，与首都同名。2013年，经北京市政府批准、由朝阳区政府主办的北京中学正式建校，备受社会各界关注。
-        </div>
-        <div class="about_text">
-          2017年，为了满足部分学生和家长的多元化升学需求，搭建成长的立交桥，北京中学组建国际方向班级。学校坚持中国立场、开放多元、融合创新，基于课程改革特色实践，和美国格伦罗克高中共同开发了国际教育体系课程、包括高中基础课程、AP课程、特色选修课程，满足学生个性化发展需求。
-        </div>
+        <div class="about_text">北京中学，与首都同名。2013年，经北京市政府批准、由朝阳区政府主办的北京中学正式建校，备受社会各界关注。</div>
+        <div
+          class="about_text"
+        >2017年，为了满足部分学生和家长的多元化升学需求，搭建成长的立交桥，北京中学组建国际方向班级。学校坚持中国立场、开放多元、融合创新，基于课程改革特色实践，和美国格伦罗克高中共同开发了国际教育体系课程、包括高中基础课程、AP课程、特色选修课程，满足学生个性化发展需求。</div>
         <router-link class="link" to="/about">了解更多</router-link>
       </div>
     </div>
@@ -30,43 +27,45 @@
       <img class="pic" src="../assets/cherry.png" alt="Cherry" />
     </div>
   </div>
-  <div id="school_info_title" class="main">了解北京中学国际部</div>
-  <div id="school_info" class="main">
-    <div id="idea" class="info">
-      <div class="cover">
-        <div class="info_container">
-          <div class="info_title">理念</div>
-          <div class="info_text">
-            2017年，为了满足部分学生和家长的多元化升学需求，搭建成长的立交桥，北京中学组建国际方向班级。学校坚持中国立场、开放多元、融合创新。
-            <br />
-            <br />
-            <router-link class="link" to="/about">了解更多</router-link>
+  <div id="school_info_container">
+    <div id="school_info_title" class="main">了解北京中学国际部</div>
+    <div id="school_info" class="main">
+      <div id="idea" class="info" style="margin: 20px 20px 0px 0px">
+        <div class="cover">
+          <div class="info_container">
+            <div class="info_title">理念</div>
+            <div class="info_text">
+              2017年，为了满足部分学生和家长的多元化升学需求，搭建成长的立交桥，北京中学组建国际方向班级。学校坚持中国立场、开放多元、融合创新。
+              <br />
+              <br />
+              <router-link class="link" to="/about">了解更多</router-link>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div id="environment" class="info">
-      <div class="cover">
-        <div class="info_container">
-          <div class="info_title">环境</div>
-          <div class="info_text">
-            2017年，为了满足部分学生和家长的多元化升学需求，搭建成长的立交桥，北京中学组建国际方向班级。学校坚持中国立场、开放多元、融合创新。
-            <br />
-            <br />
-            <router-link class="link" to="/about">了解更多</router-link>
+      <div id="environment" class="info" style="margin: 20px 20px 0px 20px">
+        <div class="cover">
+          <div class="info_container">
+            <div class="info_title">环境</div>
+            <div class="info_text">
+              2017年，为了满足部分学生和家长的多元化升学需求，搭建成长的立交桥，北京中学组建国际方向班级。学校坚持中国立场、开放多元、融合创新。
+              <br />
+              <br />
+              <router-link class="link" to="/about">了解更多</router-link>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div id="faculty" class="info">
-      <div class="cover">
-        <div class="info_container">
-          <div class="info_title">师资</div>
-          <div class="info_text">
-            2017年，为了满足部分学生和家长的多元化升学需求，搭建成长的立交桥，北京中学组建国际方向班级。学校坚持中国立场、开放多元、融合创新。
-            <br />
-            <br />
-            <router-link class="link" to="/about">了解更多</router-link>
+      <div id="faculty" class="info" style="margin: 20px 0px 0px 20px">
+        <div class="cover">
+          <div class="info_container">
+            <div class="info_title">师资</div>
+            <div class="info_text">
+              2017年，为了满足部分学生和家长的多元化升学需求，搭建成长的立交桥，北京中学组建国际方向班级。学校坚持中国立场、开放多元、融合创新。
+              <br />
+              <br />
+              <router-link class="link" to="/about">了解更多</router-link>
+            </div>
           </div>
         </div>
       </div>
@@ -195,10 +194,11 @@
 }
 #school_info_title {
   margin: auto;
-  padding: 40px;
+  /* padding: 40px; */
   text-align: center;
   font-weight: bold;
   font-size: 24pt;
+  color: white;
 }
 .info_container {
   padding: 40px;
@@ -210,8 +210,7 @@
 }
 .info {
   flex: 1;
-  height: 500px;
-  margin: 20px;
+  height: 600px;
   color: white;
 }
 .info_title {
@@ -229,5 +228,9 @@
 .main {
   max-width: 1200px;
   margin: auto;
+}
+#school_info_container {
+  background-color: #2464a4;
+  padding: 40px 0px;
 }
 </style>
