@@ -44,17 +44,17 @@ jobs:
       - name: Build
         # 安装 Node 之后就可以执行构建脚本
         run: |
-          npm install
-          npm run build
+          npm install yarn -g
+          yarn
+          yarn build
       - name: Deploy
         # 将构建产物 commit 到一个分支上，用于发布静态站点资源
-        # https://github.com/peaceiris/actions-gh-pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           # Github 会在 workflow 中自动生成 GIHUBT_TOKEN，用于认证 workflow 的运行
           github_token: ${{ secrets.GITHUB_TOKEN }}
           # 静态资源目录设置
-          publish_dir: ./build
+          publish_dir: ./dist
           # 默认发布到 gh-pages 分支上，可以指定特定的发布分支（不能选拉取代码的分支）
           publish_branch: gh-pages
           full_commit_message: ${{ github.event.head_commit.message }}
