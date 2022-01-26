@@ -1,22 +1,16 @@
 <template>
   <div id="frame">
     <span id="label">
-      <img
-        id="logo"
-        src="../assets/logo.png"
-        alt=""
-        @click="$router.push({ name: 'Index' })"
-      />
+      <img id="logo" src="../assets/logo.png" alt @click="$router.push({ name: 'Index' })" />
     </span>
     <span id="menu">
-      <router-link id="home_tab" class="tab" to="/">首页</router-link>
-      <router-link id="about_tab" class="tab" to="/about">关于我们</router-link>
-      <router-link id="news_tab" class="tab" to="/news">新闻</router-link>
-      <router-link id="gallery_tab" class="tab" to="/gallery"
-        >照片墙</router-link
-      >
-      <input id="search_bar" placeholder="Search..." />
-      <span class="menu-icon">
+      <router-link id="home_tab" class="tab" to="/">{{ $t("header.home") }}</router-link>
+      <router-link id="about_tab" class="tab" to="/about">{{ $t("header.about") }}</router-link>
+      <router-link id="news_tab" class="tab" to="/news">{{ $t("header.news") }}</router-link>
+      <router-link id="gallery_tab" class="tab" to="/gallery">{{ $t("header.gallery") }}</router-link>
+
+      <input id="search_bar" :placeholder="$t('common.search')" />
+      <span id="menu_icon" class="icon">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           aria-hidden="true"
@@ -27,7 +21,21 @@
           <path
             fill="currentColor"
             d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"
-          ></path>
+          />
+        </svg>
+      </span>
+      <span id="translate_icon" class="icon" @click="changeLanguage">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          height="24px"
+          viewBox="0 0 24 24"
+          width="24px"
+          fill="#000000"
+        >
+          <path d="M0 0h24v24H0V0z" fill="none" />
+          <path
+            d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"
+          />
         </svg>
       </span>
     </span>
@@ -36,6 +44,19 @@
 </template>
 
 <script setup>
+import { useI18n } from 'vue-i18n';
+const { locale } = useI18n();
+
+function changeLanguage() {
+  if (localStorage.getItem('lang') == 'en-US') {
+    localStorage.setItem('lang', 'zh-CN');
+    locale.value = 'zh-CN';
+  }
+  else {
+    localStorage.setItem('lang', 'en-US');
+    locale.value = 'en-US';
+  }
+}
 </script>
 
 <style scoped>
@@ -110,8 +131,7 @@
   background: #ffffff;
   width: 200px;
   height: 36px;
-  padding-left: 8px;
-  padding-right: 8px;
+  padding: 0px 8px;
   margin-left: 14px;
   font-size: 12pt;
   outline: 1px solid gray;
@@ -134,7 +154,7 @@
   }
 }
 
-.menu-icon {
+#menu_icon {
   opacity: 0;
   width: 0;
   height: 25px;

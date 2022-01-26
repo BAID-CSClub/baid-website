@@ -1,6 +1,9 @@
 <script setup>
 import HeaderVue from "./components/Header.vue";
 import FooterVue from "./components/Footer.vue";
+
+var language = window.navigator.userLanguage || window.navigator.language;
+localStorage.setItem('lang', language);
 </script>
 
 <template>

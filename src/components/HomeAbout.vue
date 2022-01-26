@@ -12,7 +12,7 @@
         <div
           class="about_text"
         >2017年，为了满足部分学生和家长的多元化升学需求，搭建成长的立交桥，北京中学组建国际方向班级。学校坚持中国立场、开放多元、融合创新，基于课程改革特色实践，和美国格伦罗克高中共同开发了国际教育体系课程、包括高中基础课程、AP课程、特色选修课程，满足学生个性化发展需求。</div>
-        <router-link class="link" to="/about">了解更多</router-link>
+        <router-link class="link" to="/about">{{ $t("common.readMore") }}</router-link>
       </div>
     </div>
   </div>
@@ -135,7 +135,7 @@
 
 #principle {
   display: flex;
-  height: 300px;
+  height: 400px;
 }
 #principle_speech {
   flex: 4;
@@ -149,7 +149,7 @@
   flex: 1;
 }
 #left {
-  font-size: 32pt;
+  font-size: 48pt;
   align-self: flex-start;
   color: #2464a4;
   font-weight: bold;
@@ -159,7 +159,7 @@
   align-self: center;
 }
 #right {
-  font-size: 32pt;
+  font-size: 48pt;
   align-self: flex-end;
   color: #2464a4;
   font-weight: bold;
