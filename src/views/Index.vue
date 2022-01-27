@@ -1,7 +1,13 @@
 <template>
   <div>
     <div id="head">
-      <swiper :navigation="true" :pagination="{ clickable: true }" :loop="true" class="mySwiper">
+      <swiper
+        :navigation="true"
+        :pagination="{ clickable: true }"
+        :loop="true"
+        :autoplay="{ delay: 4000 }"
+        class="mySwiper"
+      >
         <swiper-slide>
           <img src="../assets/main.jpg" alt="main1" />
         </swiper-slide>
@@ -38,23 +44,19 @@ import HomeGalleryVue from "../components/HomeGallery.vue";
 import HomeAbout from "../components/HomeAbout.vue";
 import HomeGallery from "../components/HomeGallery.vue";
 
+// swiper
 import { Swiper, SwiperSlide } from 'swiper/vue';
 
-// Import Swiper styles
 import 'swiper/css';
 
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-
-
-// import Swiper core and required modules
 import SwiperCore, {
-  Navigation, Pagination
+  Navigation, Pagination, Autoplay
 } from 'swiper';
 
-// install Swiper modules
-SwiperCore.use([Navigation, Pagination]);
+SwiperCore.use([Navigation, Pagination, Autoplay]);
 
 
 export default {
