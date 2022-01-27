@@ -47,6 +47,8 @@ jobs:
           npm install yarn -g
           yarn
           yarn build
+          cd ./dist
+          echo "baid.imlihe.com" > CNAME
       - name: Deploy
         # 将构建产物 commit 到一个分支上，用于发布静态站点资源
         uses: peaceiris/actions-gh-pages@v3
