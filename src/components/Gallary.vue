@@ -13,35 +13,35 @@
 <template>
     <div id="gallary">
             <div class=rank>
-                <img :src="props.gallary1" alt="1">
-                <img :src="props.gallary8" alt="1">
-                <img :src="props.gallary5" alt="1">
+                <img :src="props.gallary1" alt="Image">
+                <img :src="props.gallary8" alt="Image">
+                <img :src="props.gallary5" alt="Image">
             </div>
             <div class=rank>
-                <img :src="props.gallary2" alt="1">
-                <img :src="props.gallary7" alt="1">
-                <img :src="props.gallary1" alt="1">
-                <img :src="props.gallary6" alt="1">
-                <img :src="props.gallary7" alt="1">
+                <img :src="props.gallary2" alt="Image">
+                <img :src="props.gallary7" alt="Image">
+                <img :src="props.gallary1" alt="Image">
+                <img :src="props.gallary6" alt="Image">
+                <img :src="props.gallary7" alt="Image">
             </div>
             <div class=rank>
-                <img :src="props.gallary3" alt="1">
-                <img :src="props.gallary8" alt="1">
-                <img :src="props.gallary5" alt="1">
-                <img :src="props.gallary1" alt="1">
-                <img :src="props.gallary4" alt="1">
+                <img :src="props.gallary3" alt="Image">
+                <img :src="props.gallary8" alt="Image">
+                <img :src="props.gallary5" alt="Image">
+                <img :src="props.gallary1" alt="Image">
+                <img :src="props.gallary4" alt="Image">
                 
             </div>
             <div class=rank>
-                <img :src="props.gallary4" alt="1">
-                <img :src="props.gallary6" alt="1">
-                <img :src="props.gallary1" alt="1">
+                <img :src="props.gallary4" alt="Image">
+                <img :src="props.gallary6" alt="Image">
+                <img :src="props.gallary1" alt="Image">
             </div>
             <div class=rank style="margin-right: 1%;">
-                <img :src="props.gallary5" alt="1">
-                <img :src="props.gallary7" alt="1">
-                <img :src="props.gallary2" alt="1">
-                <img :src="props.gallary8" alt="1">
+                <img :src="props.gallary5" alt="Image">
+                <img :src="props.gallary7" alt="Image">
+                <img :src="props.gallary2" alt="Image">
+                <img :src="props.gallary8" alt="Image">
             </div>
     </div>
 </template>
