@@ -11,7 +11,7 @@ const show_header = ref(false);
 function handle_scroll(event) {
 //  如果向上滑动, 展示header
   first_passed.value = window.scrollY > window.innerHeight;
-  show_header.value = event.deltaY < 0;
+  show_header.value = event.deltaY < 10;
 }
 
 
