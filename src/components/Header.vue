@@ -62,7 +62,7 @@ function changeLanguage() {
 <style scoped>
 #frame {
   background-color: #ffffff;
-  width: auto;
+
   overflow: auto;
   display: flex;
   align-items: center;
