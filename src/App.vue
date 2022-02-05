@@ -30,7 +30,6 @@ onMounted(() => {
       <component :is="Component"/>
     </transition>
   </router-view>
-
   <FooterVue
       ICP="京ICP备13051651号 - 1"
       copyright="北京中学版权所有 © 2014 BJZX All Rights Reserved."
@@ -85,5 +84,6 @@ html::-webkit-scrollbar {
 .enable_control {
   width: 100vw;
   position: fixed;
+  z-index: 100;
 }
 </style>

@@ -28,7 +28,8 @@ const news = [
 
 <style scoped>
 .main {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
+
 }
 img {
   object-fit: cover;
