@@ -81,17 +81,13 @@ export default {
 
 <style scoped>
 #head {
-  height: calc(100vh - 75px);
+  height: calc(100vh - 78.5px);
 }
 #background {
   background: url("../assets/main.jpg") center no-repeat;
   background-size: cover;
   width: 100%;
   height: 100%;
-}
-#title {
-  margin: auto;
-  letter-spacing: 2px;
 }
 .main,
 hr {

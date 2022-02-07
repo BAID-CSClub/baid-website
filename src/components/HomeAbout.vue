@@ -181,7 +181,8 @@ video {
 
   .info {
     flex: 1;
-    width: 300px;
+    max-width: 600px;
+    min-width: 300px;
     color: white;
   }
   #principle {
