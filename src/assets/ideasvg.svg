@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="500px" height="500px" viewBox="0 0 500 500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Artboard</title>
+    <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" transform="translate(0.000000, -0.839238)" fill="#FFFFFF" stroke="#979797">
+            <path d="M125,271.886329 L249.15919,500.339238 L0.84081044,500.339238 L125,271.886329 Z" id="Triangle"></path>
+            <path d="M125,1.88632935 L249.15919,230.339238 L0.84081044,230.339238 L125,1.88632935 Z" id="Triangle" transform="translate(125.000000, 115.839238) scale(1, -1) translate(-125.000000, -115.839238) "></path>
+            <path d="M283.967943,19.6836288 L398.243373,320.774544 L169.692513,320.774544 L283.967943,19.6836288 Z" id="Triangle" transform="translate(283.967943, 169.774544) scale(1, -1) rotate(-64.000000) translate(-283.967943, -169.774544) "></path>
+            <path d="M285.112362,170.618142 L399.394386,479.676485 L170.830338,479.676485 L285.112362,170.618142 Z" id="Triangle" transform="translate(285.112362, 324.676485) scale(1, -1) rotate(-119.000000) translate(-285.112362, -324.676485) "></path>
+        </g>
+        <text id="乐" font-family="PingFangSC-Regular, PingFang SC" font-size="65" font-weight="normal" fill="#B63F34">
+            <tspan x="91.5" y="429">乐</tspan>
+        </text>
+        <text id="勇" font-family="LiGothicMed, Apple LiGothic" font-size="65" font-weight="400" fill="#B63F34">
+            <tspan x="296.5" y="374">勇</tspan>
+        </text>
+        <text id="智" font-family="LiGothicMed, Apple LiGothic" font-size="65" font-weight="400" fill="#B63F34">
+            <tspan x="296.5" y="169">智</tspan>
+        </text>
+        <text id="仁" font-family="LiGothicMed, Apple LiGothic" font-size="65" font-weight="400" fill="#B63F34">
+            <tspan x="91.5" y="105">仁</tspan>
+        </text>
+    </g>
+</svg>
