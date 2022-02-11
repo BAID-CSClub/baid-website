@@ -20,26 +20,23 @@
               <p style="color:#2464a4;margin:2px">WORLD</p>
             </div>
           </div>
-          <div id="RightPart">
-            <div id="TopPart">
+          <div id="RightPart">  
               <div id="idea1" class="idea">
                 <img src="../assets/idea1.svg"/>
-                <img src="../assets/idea1hover.svg" class="idea_child"/>
+                <img src="../assets/idea1hover.svg" class="idea_child" style="z-index:4"/>
               </div>
               <div id="idea2" class="idea">
                 <img src="../assets/idea2.svg"/>
-                <img src="../assets/idea2hover.svg" class="idea_child"/>
+                <img src="../assets/idea2hover.svg" class="idea_child" style="z-index:3"/>
               </div>
               <div id="idea3" class="idea">
                 <img src="../assets/idea3.svg"/>
-                <img src="../assets/idea3hover.svg" class="idea_child"/>
+                <img src="../assets/idea3hover.svg" class="idea_child" style="z-index:2"/>
               </div>
               <div id="idea4" class="idea">
                 <img src="../assets/idea4.svg"/>
-                <img src="../assets/idea4hover.svg" class="idea_child"/>
-              </div>
-            
-            </div>
+                <img src="../assets/idea4hover.svg" class="idea_child" style="z-index:1"/>
+              </div>           
           </div>
     </div>
 </template>
@@ -58,7 +55,6 @@
 
 <style scoped>
   .idea_child{
-    z-index: 1;
     margin-top: -500px;
     margin-bottom: 7px;
     margin-left:-46px;
@@ -109,7 +105,6 @@
   }
   #RightPart{
     margin-left: 50px;
-    /*background: url("../assets/ideasvg.svg") center no-repeat;*/
     width: 500px;
     height: 500px;
     float: right;
@@ -122,14 +117,6 @@
     font-weight: bold;
     font-size: 45px;
     margin: 10px;
-  }
-  #TopPart{
-    height: 250px;
-    width: 500px;
-  }
-  #BottomPart{
-    height: 250px;
-    width: 500px;
   }
   #idea1{
     margin-left:20px;
@@ -153,18 +140,6 @@
     margin-right:-50px;
     margin-left: 20px;
     margin-bottom: 40px;
-  }
-  #TopLeft{
-    float: left;
-  }
-  #TopRight{
-    float: right;
-  }
-  #BottomLeft{
-    float:left;
-  }
-  #BottomRight{
-    float: right;
   }
 </style>
 
