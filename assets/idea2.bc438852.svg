@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="374px" height="340px" viewBox="0 0 374 340" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 2</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-97.000000, 1.000000)">
+            <g id="Group-2" transform="translate(97.387963, -0.839238)">
+                <path d="M186.57998,19.6836288 L300.85541,320.774544 L72.30455,320.774544 L186.57998,19.6836288 Z" id="Triangle" stroke="#979797" fill="#FFFFFF" transform="translate(186.579980, 169.774544) scale(1, -1) rotate(-64.000000) translate(-186.579980, -169.774544) "></path>
+                <text id="智" font-family="LiGothicMed, Apple LiGothic" font-size="65" font-weight="400" fill="#B63F34">
+                    <tspan x="199.112037" y="169.839238">智</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

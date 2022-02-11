@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="476px" height="445px" viewBox="0 0 476 445" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 3</title>
+    <defs>
+        <filter x="-16.2%" y="-17.6%" width="132.3%" height="135.2%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="15" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-60.000000, -101.000000)">
+            <g id="Group-3" filter="url(#filter-1)" transform="translate(106.355891, 147.868084)">
+                <path d="M191.756471,21.9108191 L306.038495,330.969162 L77.4744468,330.969162 L191.756471,21.9108191 Z" id="Triangle" stroke="#979797" fill="#FFFFFF" transform="translate(191.756471, 175.969162) scale(1, -1) rotate(-119.000000) translate(-191.756471, -175.969162) "></path>
+                <text id="勇" font-family="PingFangSC-Regular, PingFang SC" font-size="23" font-weight="normal" fill="#000000">
+                    <tspan x="124.644109" y="167.131916">测试</tspan>
+                    <tspan x="170.644109" y="167.131916" font-family="LiGothicMed, Apple LiGothic" font-weight="400">文本</tspan>
+                    <tspan x="216.644109" y="167.131916">测试</tspan>
+                    <tspan x="262.644109" y="167.131916" font-family="LiGothicMed, Apple LiGothic" font-weight="400">文本</tspan>
+                    <tspan x="308.644109" y="167.131916">测试</tspan>
+                    <tspan x="147.644109" y="199.131916">测试文本测试文本</tspan>
+                    <tspan x="162.985109" y="231.131916">  测试文本测试</tspan>
+                    <tspan x="170.667109" y="263.131916">      测试文本</tspan>
+                    <tspan x="178.337609" y="295.131916">       测试文</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>
