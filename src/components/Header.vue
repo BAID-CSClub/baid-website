@@ -88,7 +88,7 @@ function changeLanguage() {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  max-height: 71.34px;
+  max-height: 81.2px;
   overflow-y:clip;
 }
 
