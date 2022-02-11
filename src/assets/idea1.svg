@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="250px" height="230px" viewBox="0 0 250 230" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group">
+            <path d="M125,1.04709121 L249.15919,229.5 L0.84081044,229.5 L125,1.04709121 Z" id="Triangle" stroke="#979797" fill="#FFFFFF" transform="translate(125.000000, 115.000000) scale(1, -1) translate(-125.000000, -115.000000) "></path>
+            <text id="仁" font-family="LiGothicMed, Apple LiGothic" font-size="65" font-weight="400" fill="#B63F34">
+                <tspan x="91.5" y="105">仁</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

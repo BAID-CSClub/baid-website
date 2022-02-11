@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="342px" height="322px" viewBox="0 0 342 322" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group</title>
+    <defs>
+        <filter x="-24.8%" y="-27.0%" width="149.6%" height="153.9%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="15" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(39.000000, 37.000000)">
+            <g id="Group" filter="url(#filter-1)" transform="translate(7.000000, 9.000000)">
+                <path d="M125,1.04709121 L249.15919,229.5 L0.84081044,229.5 L125,1.04709121 Z" id="Triangle" stroke="#979797" fill="#FFFFFF" transform="translate(125.000000, 115.000000) scale(1, -1) translate(-125.000000, -115.000000) "></path>
+                <text id="测试文本测试文本-测试文本测试-测试文本" font-family="PingFangSC-Regular, PingFang SC" font-size="23" font-weight="normal" fill="#000000">
+                    <tspan x="33" y="38">测试</tspan>
+                    <tspan x="79" y="38" font-family="LiGothicMed, Apple LiGothic" font-weight="400">文本</tspan>
+                    <tspan x="125" y="38">测试</tspan>
+                    <tspan x="171" y="38" font-family="LiGothicMed, Apple LiGothic" font-weight="400">文本</tspan>
+                    <tspan x="56" y="70">测试</tspan>
+                    <tspan x="102" y="70" font-family="LiGothicMed, Apple LiGothic" font-weight="400">文本</tspan>
+                    <tspan x="148" y="70">测试</tspan>
+                    <tspan x="194" y="70" font-family="LiGothicMed, Apple LiGothic" font-weight="400"></tspan>
+                    <tspan x="67.5" y="102">测试</tspan>
+                    <tspan x="113.5" y="102" font-family="LiGothicMed, Apple LiGothic" font-weight="400">文本</tspan>
+                    <tspan x="159.5" y="102">测</tspan>
+                    <tspan x="182.5" y="102" font-family="LiGothicMed, Apple LiGothic" font-weight="400"></tspan>
+                    <tspan x="79" y="134">测试</tspan>
+                    <tspan x="125" y="134" font-family="LiGothicMed, Apple LiGothic" font-weight="400">文本</tspan>
+                    <tspan x="102" y="166">测试</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

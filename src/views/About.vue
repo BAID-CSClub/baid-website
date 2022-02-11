@@ -22,16 +22,23 @@
           </div>
           <div id="RightPart">
             <div id="TopPart">
-              <div class="Section" id="TopLeft">
-                <p class="SectionText">测试文本1</p>
+              <div id="idea1" class="idea">
+                <img src="../assets/idea1.svg"/>
+                <img src="../assets/idea1hover.svg" class="idea_child"/>
               </div>
-              <div class="Section" id="TopRight">
-                <p class="SectionText">测试文本2</p>
+              <div id="idea2" class="idea">
+                <img src="../assets/idea2.svg"/>
+                <img src="../assets/idea2hover.svg" class="idea_child"/>
               </div>
-            </div>
-            <div id="BottomPart">
-              <div class="Section" id="BottomLeft"><p class="SectionText">测试文本3</p></div>
-              <div class="Section" id="BottomRight"><p class="SectionText">测试文本4</p></div>
+              <div id="idea3" class="idea">
+                <img src="../assets/idea3.svg"/>
+                <img src="../assets/idea3hover.svg" class="idea_child"/>
+              </div>
+              <div id="idea4" class="idea">
+                <img src="../assets/idea4.svg"/>
+                <img src="../assets/idea4hover.svg" class="idea_child"/>
+              </div>
+            
             </div>
           </div>
     </div>
@@ -50,6 +57,18 @@
 </script>
 
 <style scoped>
+  .idea_child{
+    z-index: 1;
+    margin-top: -500px;
+    margin-bottom: 7px;
+    margin-left:-46px;
+    margin-right:50px;
+    opacity: 0;
+    transition:all 0.3s ease-in;
+  }
+  .idea_child:hover{
+    opacity: 1;
+  }
   #Background{
     background: url("../assets/main.jpg") center no-repeat;
     background-size: cover;
@@ -90,7 +109,7 @@
   }
   #RightPart{
     margin-left: 50px;
-    background: url("../assets/ideasvg.svg") center no-repeat;
+    /*background: url("../assets/ideasvg.svg") center no-repeat;*/
     width: 500px;
     height: 500px;
     float: right;
@@ -104,9 +123,6 @@
     font-size: 45px;
     margin: 10px;
   }
-  #Idea{
-    transform: scale(1.3);
-  }
   #TopPart{
     height: 250px;
     width: 500px;
@@ -115,24 +131,28 @@
     height: 250px;
     width: 500px;
   }
-  .Section{
-    height: 100%;
-    width: 50%;
-    padding:0px;
-    margin: 0px;
+  #idea1{
+    margin-left:20px;
+    margin-right:-100px;
+    margin-bottom: -20px;
   }
-  .Section:hover{
-    background-color: white;
-    box-shadow: 10px 10px 8px #888888;
+  #idea2{
+    margin-top:-250px;
+    margin-left:100px;
+    margin-right:-100px;
+    margin-bottom: 0px;
   }
-  .Section:hover .SectionText{
-    display:block;
-    text-align:center;
+  #idea3{
+    margin-top:-250px;
+    margin-left:95px;
+    margin-right:-100px;
+    margin-bottom: 0px;
   }
-  .SectionText{
-    align-content: center;
-    text-align: center;
-    display: none;
+  #idea4{
+    margin-top:-280px;
+    margin-right:-50px;
+    margin-left: 20px;
+    margin-bottom: 40px;
   }
   #TopLeft{
     float: left;
