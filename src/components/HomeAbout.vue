@@ -278,6 +278,7 @@ video {
 #text {
   font-size: 20pt;
   align-self: center;
+  padding: 0px 64px;
 }
 #right {
   font-size: 48pt;
