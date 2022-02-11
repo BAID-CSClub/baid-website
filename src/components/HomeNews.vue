@@ -3,7 +3,7 @@
     <h1 class="title">N<span style="color: brown;">E</span>WS</h1>
 <!-- text left-->
     <div class="box">
-      <img alt="" src="../assets/main.jpg">
+      <img alt="" :src="mainJPG">
       <div class="content">
         <h2 class="n-title">TITLE</h2>
         <p class="n-note">
@@ -18,6 +18,7 @@
 </template>
 
 <script setup>
+import mainJPG from "../assets/main.jpg";
 
 const news = [
   {
@@ -63,5 +64,23 @@ img {
   color: #4a698d;
   /*margin-left: 5px;*/
   font-size: 40px;
+}
+
+@media screen and (max-width: 600px) {
+  .box {
+    flex-direction: column;
+    align-items: center;
+  }
+  .content {
+    width: 90%;
+  }
+  .box > img {
+    width: 90%;
+    margin-left: 0;
+  }
+  .title {
+    margin-left: 20px;
+  }
+
 }
 </style>

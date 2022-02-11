@@ -3,7 +3,7 @@
         <div id="UpperPart">
              <h1 id="AboveTitle">关<span style="color:#b63f34">于</span>我们</h1>
         </div>
-        
+
     </div>
     <div id="BodyPart">
           <div id="LeftPart">
@@ -20,7 +20,7 @@
               <p style="color:#2464a4;margin:2px">WORLD</p>
             </div>
           </div>
-          <div id="RightPart">  
+          <div id="RightPart">
               <div id="idea1" class="idea">
                 <img src="../assets/idea1.svg"/>
                 <img src="../assets/idea1hover.svg" class="idea_child" style="z-index:4"/>
@@ -36,7 +36,7 @@
               <div id="idea4" class="idea">
                 <img src="../assets/idea4.svg"/>
                 <img src="../assets/idea4hover.svg" class="idea_child" style="z-index:1"/>
-              </div>           
+              </div>
           </div>
     </div>
 </template>
@@ -71,16 +71,19 @@
   }
   #UpperPart{
     background-image: linear-gradient(rgba(0,0,0,0.6), rgba(255,255,255,1));
-    height: 1000px;
+    height: calc(100vh - 80px);
     color: white;
     display: flex;
-        
+
   }
   #AboveTitle{
     margin-left: 100px;
     font-size: 60px;
     color: #2464a4;
     opacity: 1!important;
+    height: fit-content;
+    position: absolute;
+    bottom: 30px;
   }
   .UnderLine{
     border-bottom-style: solid;
@@ -89,7 +92,7 @@
     font-size: 30px;
   }
   #BodyPart{
-    
+
     height: 1000px;
     padding: 10px;
     padding-bottom: 300px;
@@ -100,7 +103,7 @@
     font-size: 36px;
   }
   #LeftPart{
-    
+
     float: left;
   }
   #RightPart{
