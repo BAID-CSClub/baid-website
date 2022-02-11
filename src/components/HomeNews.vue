@@ -52,6 +52,7 @@ img {
 .box > img {
   width: 50%;
   border: #2b537a inset 3px;
+  margin-left:30px;
 }
 .content {
   width: 50%;
