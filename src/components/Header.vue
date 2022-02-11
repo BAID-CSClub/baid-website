@@ -89,6 +89,7 @@ function changeLanguage() {
   align-items: center;
   justify-content: flex-end;
   max-height: 71.34px;
+  overflow-y:clip;
 }
 
 .tab {
