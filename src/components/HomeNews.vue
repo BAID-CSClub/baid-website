@@ -63,6 +63,7 @@ img {
   display:inline-block;
   vertical-align:middle; 
   border: #2b537a inset 3px;
+  margin: 15px 0px;
 }
 .content {
   width: 50%;
