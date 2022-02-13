@@ -13,8 +13,15 @@ const messages = {
             gallery: 'Gallery'
         },
         common: {
-            readMore: 'Read More',
+            read_more: 'Read More',
             search: 'Search...'
+        },
+        homeAbout: {
+            about_title: "Welcome to Beijing Academy International Division",
+            school_info_title: "Discover Beijing Academy International Division",
+            idea: "idea",
+            environment: "environment",
+            faculty: "faculty"
         }
     },
     'zh-CN': {
@@ -25,8 +32,15 @@ const messages = {
             gallery: '画廊'
         },
         common: {
-            readMore: '了解更多',
+            read_more: '了解更多',
             search: '搜索...'
+        },
+        homeAbout: {
+            about_title: "欢迎来到北京中学国际部",
+            school_info_title: "了解北京中学国际部",
+            idea: "理念",
+            environment: "环境",
+            faculty: "师资"
         }
     }
 };

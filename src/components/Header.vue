@@ -70,15 +70,13 @@ const show_side_menu = ref(false);
 <style scoped>
 #frame {
   background-color: #ffffff;
-
   overflow: auto;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   box-shadow: #333333 0 2px 10px;
-  padding-left: 24px;
-  padding-right: 24px;
-  width: 100vw;
+  padding: 0px 24px;
+  /* width: 100vw; */
 
   /*border-bottom: 5px solid #2464a4;*/
 }
@@ -99,7 +97,6 @@ const show_side_menu = ref(false);
   justify-content: flex-end;
   height: 80px;
   overflow-y: hidden;
-  padding-right: 40px;
 }
 
 .tab {

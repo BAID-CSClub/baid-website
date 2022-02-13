@@ -8,12 +8,12 @@
           </video>
         </div>
         <div id="information">
-          <div id="about_title">这里是北京中学国际部</div>
-          <div class="about_text">北京中学，与首都同名。2013年，经北京市政府批准、由朝阳区政府主办的北京中学正式建校，备受社会各界关注。</div>
-          <div
-            class="about_text"
-          >2017年，为了满足部分学生和家长的多元化升学需求，搭建成长的立交桥，北京中学组建国际方向班级。学校坚持中国立场、开放多元、融合创新，基于课程改革特色实践，和美国格伦罗克高中共同开发了国际教育体系课程、包括高中基础课程、AP课程、特色选修课程，满足学生个性化发展需求。</div>
-          <router-link class="link" to="/about">{{ $t("common.readMore") }}</router-link>
+          <div class="about_title">{{ $t("homeAbout.about_title") }}</div>
+          <div class="about_text">
+            北京中学，与首都同名。2013年，经北京市政府批准、由朝阳区政府主办的北京中学正式建校，备受社会各界关注。
+            <br />2017年，为了满足部分学生和家长的多元化升学需求，搭建成长的立交桥，北京中学组建国际方向班级。学校坚持中国立场、开放多元、融合创新，基于课程改革特色实践，和美国格伦罗克高中共同开发了国际教育体系课程、包括高中基础课程、AP课程、特色选修课程，满足学生个性化发展需求。
+          </div>
+          <router-link class="link" to="/about">{{ $t("common.read_more") }}</router-link>
         </div>
       </div>
     </div>
@@ -25,22 +25,20 @@
       <div id="right">”</div>
       <div id="principle_info">——周慧 北京中学国际部校长</div>
     </div>
-    <!-- <div id="principle_pic"> -->
     <img class="pic" src="../assets/cherry.png" alt="Cherry" />
-    <!-- </div> -->
   </div>
   <div id="school_info_container">
-    <div id="school_info_title" class="main">了解北京中学国际部</div>
+    <div id="school_info_title" class="main">{{ $t("homeAbout.school_info_title") }}</div>
     <div id="school_info" class="main">
       <div id="idea" class="info">
         <div class="cover">
           <div class="info_container">
-            <div class="info_title">理念</div>
+            <div class="info_title">{{ $t("homeAbout.idea") }}</div>
             <div class="info_text">
               2017年，为了满足部分学生和家长的多元化升学需求，搭建成长的立交桥，北京中学组建国际方向班级。学校坚持中国立场、开放多元、融合创新。
               <br />
               <br />
-              <router-link class="link" to="/about">了解更多</router-link>
+              <router-link class="link" to="/about">{{ $t("common.read_more") }}</router-link>
             </div>
           </div>
         </div>
@@ -48,12 +46,12 @@
       <div id="environment" class="info">
         <div class="cover">
           <div class="info_container">
-            <div class="info_title">环境</div>
+            <div class="info_title">{{ $t("homeAbout.environment") }}</div>
             <div class="info_text">
               2017年，为了满足部分学生和家长的多元化升学需求，搭建成长的立交桥，北京中学组建国际方向班级。学校坚持中国立场、开放多元、融合创新。
               <br />
               <br />
-              <router-link class="link" to="/about">了解更多</router-link>
+              <router-link class="link" to="/about">{{ $t("common.read_more") }}</router-link>
             </div>
           </div>
         </div>
@@ -61,12 +59,12 @@
       <div id="faculty" class="info">
         <div class="cover">
           <div class="info_container">
-            <div class="info_title">师资</div>
+            <div class="info_title">{{ $t("homeAbout.faculty") }}</div>
             <div class="info_text">
               2017年，为了满足部分学生和家长的多元化升学需求，搭建成长的立交桥，北京中学组建国际方向班级。学校坚持中国立场、开放多元、融合创新。
               <br />
               <br />
-              <router-link class="link" to="/about">了解更多</router-link>
+              <router-link class="link" to="/about">{{ $t("common.read_more") }}</router-link>
             </div>
           </div>
         </div>
@@ -137,6 +135,7 @@
   font-size: 20pt;
   margin-bottom: 16px;
   text-align: center;
+  text-transform: uppercase;
 }
 .info_text {
   margin-top: 16px;
@@ -181,13 +180,16 @@ video {
 
   .info {
     flex: 1;
-    max-width: 600px;
+    max-width: 500px;
     min-width: 300px;
     color: white;
   }
   #principle {
     flex-direction: column;
     height: auto;
+  }
+  .pic {
+    display: none;
   }
 }
 
@@ -232,10 +234,11 @@ video {
   font-size: 14pt;
   color: #e0e0e0;
 }
-#about_title {
+.about_title {
   font-size: 24pt;
   font-weight: bold;
   margin-bottom: 16px;
+  text-transform: uppercase;
 }
 .link {
   color: #aed5ff;
@@ -257,18 +260,19 @@ video {
   overflow: auto;
   height: auto;
   align-items: center;
+  padding: 40px;
 }
 #principle_speech {
   flex: 4;
-  padding: 40px;
+  margin-right: 20px;
   display: flex;
   flex-direction: column;
   color: #2d2d2d;
   justify-content: center;
 }
-#principle_pic {
+/* #principle_pic {
   flex: 1;
-}
+} */
 #left {
   font-size: 48pt;
   align-self: flex-start;
@@ -293,8 +297,7 @@ video {
 .pic {
   flex: 1;
   object-fit: cover;
-  height: 100%;
-  width: 100%;
+  margin-left: 20px;
 }
 
 .main {

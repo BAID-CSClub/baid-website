@@ -1,15 +1,18 @@
 <script setup>
 import HeaderVue from "./components/Header.vue";
 import FooterVue from "./components/Footer.vue";
-import {computed, onMounted, ref} from "vue";
+import { computed, onMounted, ref } from "vue";
 
-let language = window.navigator.userLanguage || window.navigator.language;
-localStorage.setItem('lang', language);
+// if not language has been specified
+if (!localStorage.getItem('lang')) {
+  let language = window.navigator.userLanguage || window.navigator.language;
+  localStorage.setItem('lang', language);
+}
 
 const show_header = ref(false);
 
 function handle_scroll(event) {
-//  如果向上滑动, 展示header
+  //  如果向上滑动, 展示header
   first_passed.value = window.scrollY > window.innerHeight;
   show_header.value = event.deltaY < 10;
 }
@@ -23,18 +26,21 @@ onMounted(() => {
 </script>
 
 <template>
-  <HeaderVue :class="{show: show_header, hide: !show_header, enable_control: first_passed}" class="header"/>
+  <HeaderVue
+    :class="{ show: show_header, hide: !show_header, enable_control: first_passed }"
+    class="header"
+  />
 
   <router-view v-slot="{ Component }">
     <transition name="fade">
-      <component :is="Component"/>
+      <component :is="Component" />
     </transition>
   </router-view>
   <FooterVue
-      ICP="京ICP备13051651号 - 1"
-      copyright="北京中学版权所有 © 2014 BJZX All Rights Reserved."
-      address="地址：北京市朝阳区西坝河东里1号"
-      contact="联系电话： 010-50981098（西坝河校区） 010-50951290（东坝南校区）"
+    ICP="京ICP备13051651号 - 1"
+    copyright="北京中学版权所有 © 2014 BJZX All Rights Reserved."
+    address="地址：北京市朝阳区西坝河东里1号"
+    contact="联系电话： 010-50981098（西坝河校区） 010-50951290（东坝南校区）"
   />
 </template>
 
@@ -66,9 +72,6 @@ html::-webkit-scrollbar {
   font-family: "Source Han Sans SC";
   src: url("./fonts/SourceHanSansSC-VF.otf");
 }
-
-
-
 </style>
 
 <style scoped>
@@ -79,7 +82,7 @@ html::-webkit-scrollbar {
   top: -100px;
 }
 .header {
-  transition: top .2s ease;
+  transition: top 0.2s ease;
 }
 .enable_control {
   width: 100vw;
