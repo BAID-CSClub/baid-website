@@ -98,7 +98,7 @@ hr {
 .swiper {
   width: 100%;
   height: 100%;
-  --swiper-theme-color: #2464a4;
+  --swiper-theme-color: var(--baid-blue);
 }
 
 .swiper-slide {

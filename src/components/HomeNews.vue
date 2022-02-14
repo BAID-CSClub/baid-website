@@ -1,6 +1,6 @@
 <template>
   <div class="main">
-    <h1 class="title">N<span style="color: brown;">E</span>WS</h1>
+    <h1 class="title">N<span style="color: var(--baid-red);">E</span>WS</h1>
 <!-- text left-->
     <div class="box">
       <img alt="" src="../assets/main.jpg">
@@ -73,7 +73,7 @@ img {
 }
 .title {
   text-align:left;
-  color: #4a698d;
+  color: var(--baid-blue);
   margin-left: 15px;
   font-size: 45px;
 }

@@ -102,7 +102,7 @@
   justify-content: center;
 }
 #school_info_container {
-  background-color: #2464a4;
+  background-color: var(--baid-blue);
   padding: 40px;
   height: auto;
 }
@@ -118,7 +118,7 @@
   margin: auto;
   text-align: center;
   font-weight: bold;
-  font-size: 24pt;
+  font-size: 32px;
   color: white;
 }
 .info_container {
@@ -132,14 +132,14 @@
 
 .info_title {
   font-weight: bold;
-  font-size: 18pt;
+  font-size: 24px;
   margin-bottom: 16px;
   text-align: center;
   text-transform: uppercase;
 }
 .info_text {
   margin-top: 16px;
-  font-size: 14pt;
+  font-size: 20px;
   line-height: 150%;
 }
 
@@ -231,11 +231,11 @@ video {
 .about_text {
   padding: 4px 0;
   line-height: 30px;
-  font-size: 14pt;
+  font-size: 20px;
   color: #e0e0e0;
 }
 .about_title {
-  font-size: 24pt;
+  font-size: 32px;
   font-weight: bold;
   margin-bottom: 16px;
   text-transform: uppercase;
@@ -246,6 +246,7 @@ video {
   transition: all 0.2s ease-in-out;
   display: block;
   margin-top: 10px;
+  font-size: 20px;
 }
 
 .link:hover {
@@ -267,31 +268,31 @@ video {
   margin-right: 20px;
   display: flex;
   flex-direction: column;
-  color: #2d2d2d;
+  color: var(--main-text);
   justify-content: center;
 }
 /* #principle_pic {
   flex: 1;
 } */
 #left {
-  font-size: 48pt;
+  font-size: 64px;
   align-self: flex-start;
-  color: #2464a4;
+  color: var(--baid-blue);
   font-weight: bold;
 }
 #text {
-  font-size: 20pt;
+  font-size: 32px;
   align-self: center;
   padding: 0px 64px;
 }
 #right {
-  font-size: 48pt;
+  font-size: 64px;
   align-self: flex-end;
-  color: #2464a4;
+  color: var(--baid-blue);
   font-weight: bold;
 }
 #principle_info {
-  font-size: 16pt;
+  font-size: 20px;
   align-self: flex-end;
 }
 .pic {

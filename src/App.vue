@@ -49,6 +49,9 @@ body {
   margin: 0;
   overflow-x: hidden;
   font-family: "Source Han Sans SC", Arial, Helvetica, sans-serif;
+  --baid-blue: #2464a4;
+  --baid-red: #b63f34;
+  --main-text: #2d2d2d;
 }
 
 html::-webkit-scrollbar {

@@ -154,7 +154,7 @@ const show_side_menu = ref(false);
 }
 
 #search_bar:focus {
-  outline-color: #2464a4;
+  outline-color: var(--baid-blue);
   box-shadow: 0 0 5px #888888;
 }
 
