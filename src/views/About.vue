@@ -21,21 +21,21 @@
             </div>
           </div>
           <div id="RightPart">
-              <div id="idea1" class="idea">
-                <img src="../assets/idea1.svg"/>
-                <img src="../assets/idea1hover.svg" class="idea_child" style="z-index:4"/>
+              <div id="idea1">
+                <img src="../assets/idea1.svg" class="idea_b"/>
+                <img src="../assets/idea1hover.svg" class="idea_child"/>
               </div>
-              <div id="idea2" class="idea">
-                <img src="../assets/idea2.svg"/>
-                <img src="../assets/idea2hover.svg" class="idea_child" style="z-index:3"/>
+              <div id="idea2">
+                <img src="../assets/idea2.svg" class="idea_b"/>
+                <img src="../assets/idea2hover.svg" class="idea_child"/>
               </div>
-              <div id="idea3" class="idea">
-                <img src="../assets/idea3.svg"/>
-                <img src="../assets/idea3hover.svg" class="idea_child" style="z-index:2"/>
+              <div id="idea3">
+                <img src="../assets/idea3.svg" class="idea_b"/>
+                <img src="../assets/idea3hover.svg" class="idea_child"/>
               </div>
-              <div id="idea4" class="idea">
-                <img src="../assets/idea4.svg"/>
-                <img src="../assets/idea4hover.svg" class="idea_child" style="z-index:1"/>
+              <div id="idea4">
+                <img src="../assets/idea4.svg" class="idea_b"/>
+                <img src="../assets/idea4hover.svg" class="idea_child"/>
               </div>
           </div>
     </div>
@@ -55,15 +55,25 @@
 
 <style scoped>
   .idea_child{
+    position:relative;
     margin-top: -500px;
     margin-bottom: 7px;
     margin-left:-46px;
     margin-right:50px;
+    z-index:9;
     opacity: 0;
     transition:all 0.3s ease-in;
   }
-  .idea_child:hover{
-    opacity: 1;
+  .idea_b{
+    position:relative;
+    z-index:11;
+    transition:all 0.3s ease-out;
+  }
+  .idea_b:hover{
+    opacity: 0;
+  }
+  .idea_b:hover + .idea_child{
+    opacity:1;
   }
   #Background{
     background: url("../assets/main.jpg") center no-repeat;
@@ -122,23 +132,30 @@
     margin: 10px;
   }
   #idea1{
+    position:relative;
+    width:300px;
+    height:300px;
+    z-index:1000;
     margin-left:20px;
     margin-right:-100px;
     margin-bottom: -20px;
   }
   #idea2{
+    
     margin-top:-250px;
     margin-left:100px;
     margin-right:-100px;
     margin-bottom: 0px;
   }
   #idea3{
+    
     margin-top:-250px;
     margin-left:95px;
     margin-right:-100px;
     margin-bottom: 0px;
   }
   #idea4{
+   
     margin-top:-280px;
     margin-right:-50px;
     margin-left: 20px;
