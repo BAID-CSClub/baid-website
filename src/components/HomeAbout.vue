@@ -132,7 +132,7 @@
 
 .info_title {
   font-weight: bold;
-  font-size: 20pt;
+  font-size: 18pt;
   margin-bottom: 16px;
   text-align: center;
   text-transform: uppercase;

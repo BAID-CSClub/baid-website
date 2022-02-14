@@ -8,7 +8,7 @@ export default {
   <footer>
     <div id="footer_container" class="main">
       <div id="img_container">
-        <img src="assets/footer_logo.png" alt="logo" />
+        <img src="../assets/footer_logo.png" alt="logo" />
       </div>
       <div id="text_container">
         <div>
