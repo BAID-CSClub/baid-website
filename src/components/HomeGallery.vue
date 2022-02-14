@@ -2,6 +2,8 @@
 const props = defineProps({
   images: Array
 })
+
+
 </script>
 <template>
   <div class="bg">

@@ -23,14 +23,7 @@
       <HomeAbout></HomeAbout>
       <HomeNewsVue></HomeNewsVue>
       <HomeGallery
-        :images="[
-          '/src/assets/1.jpg',
-          '/src/assets/2.jpg',
-          '/src/assets/3.jpg',
-          '/src/assets/4.jpg',
-          '/src/assets/5.jpg',
-          '/src/assets/2.jpg',
-        ]"
+        :images="images"
       />
     </div>
   </div>
@@ -58,6 +51,16 @@ import SwiperCore, {
 
 SwiperCore.use([Navigation, Pagination, Autoplay]);
 
+import J1 from "../assets/1.jpg";
+import J2 from "../assets/2.jpg";
+import J3 from "../assets/3.jpg";
+import J4 from "../assets/4.jpg";
+import J5 from "../assets/5.jpg";
+import J6 from "../assets/6.jpg";
+import J7 from "../assets/7.jpg";
+import J8 from "../assets/8.jpg";
+
+
 
 export default {
   components: {
@@ -74,6 +77,16 @@ export default {
   data() {
     return {
       title: "欢迎来到北京中学国际部",
+      images: [
+        J1,
+        J2,
+        J3,
+        J4,
+        J5,
+        J6,
+        J7,
+        J8,
+      ]
     };
   },
 };
