@@ -10,15 +10,14 @@ const props = defineProps({
     <div class="main">
       <h1 class="title">GALLERY</h1>
       <div class="grid">
-        <img v-for="img in images" :src="img" alt="" class="item">
+        <img v-for="img in images" :src="img" :key="img" class="item" />
       </div>
     </div>
-
   </div>
-
 </template>
 <style scoped>
-.main, hr {
+.main,
+hr {
   margin: auto;
   max-width: 1200px;
   width: 95%;
@@ -45,14 +44,14 @@ const props = defineProps({
   break-inside: avoid;
   margin-bottom: 1rem;
 }
-img{
+img {
   width: 100%;
   margin-bottom: 1vw;
   transition: all 0.1s ease-in;
   transform: scale(1);
 }
 
-img:hover{
+img:hover {
   transform: scale(1.05);
 }
 </style>

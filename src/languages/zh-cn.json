@@ -1,0 +1,19 @@
+{
+    "header": {
+        "home": "首页",
+        "about": "关于我们",
+        "news": "新闻",
+        "gallery": "画廊"
+    },
+    "common": {
+        "read_more": "了解更多",
+        "search": "搜索..."
+    },
+    "homeAbout": {
+        "about_title": "欢迎来到北京中学国际部",
+        "school_info_title": "了解北京中学国际部",
+        "idea": "理念",
+        "courses": "环境",
+        "faculty": "师资"
+    }
+}

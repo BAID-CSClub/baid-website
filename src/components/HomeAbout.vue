@@ -1,70 +1,72 @@
 <template>
-  <div id="bg">
-    <div id="bg_cover">
-      <div id="container" class="main">
-        <div id="video">
-          <video controls>
-            <source src="../assets/Rocket.mp4" type="video/mp4" />Your browser does not support the video tag.
-          </video>
-        </div>
-        <div id="information">
-          <div class="about_title">{{ $t("homeAbout.about_title") }}</div>
-          <div class="about_text">
-            北京中学，与首都同名。2013年，经北京市政府批准、由朝阳区政府主办的北京中学正式建校，备受社会各界关注。
-            <br />2017年，为了满足部分学生和家长的多元化升学需求，搭建成长的立交桥，北京中学组建国际方向班级。学校坚持中国立场、开放多元、融合创新，基于课程改革特色实践，和美国格伦罗克高中共同开发了国际教育体系课程、包括高中基础课程、AP课程、特色选修课程，满足学生个性化发展需求。
+  <div id="homeAbout">
+    <div id="bg">
+      <div id="bg_cover">
+        <div id="container" class="main">
+          <div id="video">
+            <video controls>
+              <source src="../assets/Rocket.mp4" type="video/mp4" />Your browser does not support the video tag.
+            </video>
           </div>
-          <router-link class="link" to="/about">{{ $t("common.read_more") }}</router-link>
+          <div id="information">
+            <div class="about_title">{{ $t("homeAbout.about_title") }}</div>
+            <div class="about_text">
+              北京中学，与首都同名。2013年，经北京市政府批准、由朝阳区政府主办的北京中学正式建校，备受社会各界关注。
+              <br />2017年，为了满足部分学生和家长的多元化升学需求，搭建成长的立交桥，北京中学组建国际方向班级。学校坚持中国立场、开放多元、融合创新，基于课程改革特色实践，和美国格伦罗克高中共同开发了国际教育体系课程、包括高中基础课程、AP课程、特色选修课程，满足学生个性化发展需求。
+            </div>
+            <router-link class="link" to="/about">{{ $t("common.read_more") }}</router-link>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <div id="principle" class="main">
-    <div id="principle_speech">
-      <div id="left">“</div>
-      <div id="text">STH FROM OUR DEAR CHERRY</div>
-      <div id="right">”</div>
-      <div id="principle_info">——周慧 北京中学国际部校长</div>
+    <div id="principle" class="main">
+      <div id="principle_speech">
+        <div id="left">“</div>
+        <div id="text">STH FROM OUR DEAR CHERRY</div>
+        <div id="right">”</div>
+        <div id="principle_info">——周慧 北京中学国际部校长</div>
+      </div>
+      <img class="pic" src="../assets/cherry.png" alt="Cherry" />
     </div>
-    <img class="pic" src="../assets/cherry.png" alt="Cherry" />
-  </div>
-  <div id="school_info_container">
-    <div id="school_info_title" class="main">{{ $t("homeAbout.school_info_title") }}</div>
-    <div id="school_info" class="main">
-      <div id="idea" class="info">
-        <div class="cover">
-          <div class="info_container">
-            <div class="info_title">{{ $t("homeAbout.idea") }}</div>
-            <div class="info_text">
-              2017年，为了满足部分学生和家长的多元化升学需求，搭建成长的立交桥，北京中学组建国际方向班级。学校坚持中国立场、开放多元、融合创新。
-              <br />
-              <br />
-              <router-link class="link" to="/about">{{ $t("common.read_more") }}</router-link>
+    <div id="school_info_container">
+      <div id="school_info_title" class="main">{{ $t("homeAbout.school_info_title") }}</div>
+      <div id="school_info" class="main">
+        <div id="idea" class="info">
+          <div class="cover">
+            <div class="info_container">
+              <div class="info_title">{{ $t("homeAbout.idea") }}</div>
+              <div class="info_text">
+                2017年，为了满足部分学生和家长的多元化升学需求，搭建成长的立交桥，北京中学组建国际方向班级。学校坚持中国立场、开放多元、融合创新。
+                <br />
+                <br />
+                <router-link class="link" to="/about">{{ $t("common.read_more") }}</router-link>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div id="environment" class="info">
-        <div class="cover">
-          <div class="info_container">
-            <div class="info_title">{{ $t("homeAbout.courses") }}</div>
-            <div class="info_text">
-              2017年，为了满足部分学生和家长的多元化升学需求，搭建成长的立交桥，北京中学组建国际方向班级。学校坚持中国立场、开放多元、融合创新。
-              <br />
-              <br />
-              <router-link class="link" to="/about">{{ $t("common.read_more") }}</router-link>
+        <div id="environment" class="info">
+          <div class="cover">
+            <div class="info_container">
+              <div class="info_title">{{ $t("homeAbout.courses") }}</div>
+              <div class="info_text">
+                2017年，为了满足部分学生和家长的多元化升学需求，搭建成长的立交桥，北京中学组建国际方向班级。学校坚持中国立场、开放多元、融合创新。
+                <br />
+                <br />
+                <router-link class="link" to="/about">{{ $t("common.read_more") }}</router-link>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div id="faculty" class="info">
-        <div class="cover">
-          <div class="info_container">
-            <div class="info_title">{{ $t("homeAbout.faculty") }}</div>
-            <div class="info_text">
-              2017年，为了满足部分学生和家长的多元化升学需求，搭建成长的立交桥，北京中学组建国际方向班级。学校坚持中国立场、开放多元、融合创新。
-              <br />
-              <br />
-              <router-link class="link" to="/about">{{ $t("common.read_more") }}</router-link>
+        <div id="faculty" class="info">
+          <div class="cover">
+            <div class="info_container">
+              <div class="info_title">{{ $t("homeAbout.faculty") }}</div>
+              <div class="info_text">
+                2017年，为了满足部分学生和家长的多元化升学需求，搭建成长的立交桥，北京中学组建国际方向班级。学校坚持中国立场、开放多元、融合创新。
+                <br />
+                <br />
+                <router-link class="link" to="/about">{{ $t("common.read_more") }}</router-link>
+              </div>
             </div>
           </div>
         </div>
@@ -109,7 +111,7 @@
 
 #school_info {
   display: flex;
-  overflow: auto;
+  overflow-x: hidden;
   padding: 40px 0px 0px;
   align-items: center;
 }

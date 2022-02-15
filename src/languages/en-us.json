@@ -1,0 +1,19 @@
+{
+    "header": {
+        "home": "Home",
+        "about": "About",
+        "news": "News",
+        "gallery": "Gallery"
+    },
+    "common": {
+        "read_more": "Read More",
+        "search": "Search..."
+    },
+    "homeAbout": {
+        "about_title": "Welcome to Beijing Academy International Division",
+        "school_info_title": "Discover Beijing Academy International Division",
+        "idea": "idea",
+        "courses": "courses",
+        "faculty": "faculty"
+    }
+}

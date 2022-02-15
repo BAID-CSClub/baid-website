@@ -1,57 +1,74 @@
 <template>
-  <div id="frame">
-    <div id="menu_icon" class="icon" @click="show_side_menu = true;">
-      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24">
-        <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M4 8h16"></path>
-          <path d="M4 16h16"></path>
-        </g>
-      </svg>
-    </div>
-    <span id="label">
-      <img id="logo" src="../assets/logo.png" alt @click="$router.push({ name: 'Index' })"/>
-    </span>
-
-
-    <div id="menu">
-      <router-link id="home_tab" class="tab" to="/">{{ $t("header.home") }}</router-link>
-      <router-link id="about_tab" class="tab" to="/about">{{ $t("header.about") }}</router-link>
-      <router-link id="news_tab" class="tab" to="/news">{{ $t("header.news") }}</router-link>
-      <router-link id="gallery_tab" class="tab" to="/gallery">{{ $t("header.gallery") }}</router-link>
-
-      <input id="search_bar" :placeholder="$t('common.search')"/>
-
-      <div id="translate_icon" class="icon" @click="changeLanguage">
+  <div id="header">
+    <div id="frame">
+      <div id="menu_icon" class="icon" @click="show_side_menu = true;">
         <svg
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          viewBox="0 0 24 24"
+        >
+          <g
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M4 8h16" />
+            <path d="M4 16h16" />
+          </g>
+        </svg>
+      </div>
+      <span id="label">
+        <img id="logo" src="../assets/logo.png" alt @click="$router.push({ name: 'Index' })" />
+      </span>
+
+      <div id="menu">
+        <router-link id="home_tab" class="tab" to="/">{{ $t("header.home") }}</router-link>
+        <router-link id="about_tab" class="tab" to="/about">{{ $t("header.about") }}</router-link>
+        <router-link id="news_tab" class="tab" to="/news">{{ $t("header.news") }}</router-link>
+        <router-link id="gallery_tab" class="tab" to="/gallery">{{ $t("header.gallery") }}</router-link>
+
+        <input id="search_bar" :placeholder="$t('common.search')" />
+
+        <div id="translate_icon" class="icon" @click="changeLanguage">
+          <svg
             xmlns="http://www.w3.org/2000/svg"
             height="24px"
             viewBox="0 0 24 24"
             width="24px"
             fill="#000000"
-        >
-          <path d="M0 0h24v24H0V0z" fill="none"/>
-          <path
+          >
+            <path d="M0 0h24v24H0V0z" fill="none" />
+            <path
               d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div class="side_menu" :class="{ show: show_side_menu, hide: !show_side_menu }">
+      <div id="close_icon" @click="show_side_menu = false">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          viewBox="0 0 32 32"
+        >
+          <path
+            d="M24 9.4L22.6 8L16 14.6L9.4 8L8 9.4l6.6 6.6L8 22.6L9.4 24l6.6-6.6l6.6 6.6l1.4-1.4l-6.6-6.6L24 9.4z"
+            fill="currentColor"
           />
         </svg>
       </div>
     </div>
   </div>
-  <div class="side_menu" :class="{show: show_side_menu, hide: !show_side_menu}">
-    <div id="close_icon" @click="show_side_menu = false">
-      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32">
-        <path d="M24 9.4L22.6 8L16 14.6L9.4 8L8 9.4l6.6 6.6L8 22.6L9.4 24l6.6-6.6l6.6 6.6l1.4-1.4l-6.6-6.6L24 9.4z"
-              fill="currentColor"></path>
-      </svg>
-    </div>
-  </div>
 </template>
 
 <script setup>
-import {useI18n} from 'vue-i18n';
-import {ref} from "vue";
+import { useI18n } from 'vue-i18n';
+import { ref } from "vue";
 
-const {locale} = useI18n();
+const { locale } = useI18n();
 
 function changeLanguage() {
   if (localStorage.getItem('lang') === 'en-US') {
@@ -196,12 +213,11 @@ const show_side_menu = ref(false);
   width: 40px;
   text-align: center;
   vertical-align: middle;
-  transition: all .2s ease-in-out;
-
+  transition: all 0.2s ease-in-out;
 }
 
 #label {
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 @keyframes late_hide {
@@ -211,11 +227,10 @@ const show_side_menu = ref(false);
 }
 
 @media (max-width: 900px) {
-
   .tab {
     opacity: 0;
     width: 0;
-    animation: late_hide .2s;
+    animation: late_hide 0.2s;
   }
 
   #search_bar {
@@ -242,7 +257,6 @@ const show_side_menu = ref(false);
     left: 15px;
   }
 }
-
 
 .side_menu {
   position: absolute;
@@ -271,8 +285,6 @@ const show_side_menu = ref(false);
   color: #2b537a;
 }
 
-
-
 .side_menu.hide {
   right: 100vw;
 }
@@ -287,7 +299,6 @@ const show_side_menu = ref(false);
 }
 
 .side_menu.show {
-  animation: _side_show .2s;
+  animation: _side_show 0.2s;
 }
-
 </style>
