@@ -46,7 +46,7 @@
       <div id="environment" class="info">
         <div class="cover">
           <div class="info_container">
-            <div class="info_title">{{ $t("homeAbout.environment") }}</div>
+            <div class="info_title">{{ $t("homeAbout.courses") }}</div>
             <div class="info_text">
               2017年，为了满足部分学生和家长的多元化升学需求，搭建成长的立交桥，北京中学组建国际方向班级。学校坚持中国立场、开放多元、融合创新。
               <br />

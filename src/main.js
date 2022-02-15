@@ -20,7 +20,7 @@ const messages = {
             about_title: "Welcome to Beijing Academy International Division",
             school_info_title: "Discover Beijing Academy International Division",
             idea: "idea",
-            environment: "environment",
+            courses: "courses",
             faculty: "faculty"
         }
     },
@@ -39,7 +39,7 @@ const messages = {
             about_title: "欢迎来到北京中学国际部",
             school_info_title: "了解北京中学国际部",
             idea: "理念",
-            environment: "环境",
+            courses: "环境",
             faculty: "师资"
         }
     }
