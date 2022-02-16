@@ -21,20 +21,15 @@
     </div>
     <div>
       <HomeAbout></HomeAbout>
-      <HomeNewsVue></HomeNewsVue>
-      <HomeGallery
-        :images="images"
-      />
+      <HomeNews></HomeNews>
+      <HomeGallery :images="images" />
     </div>
   </div>
 </template>
 
 <script>
-import HeaderVue from "../components/Header.vue";
-import HomeAboutVue from "../components/HomeAbout.vue";
-import HomeNewsVue from "../components/HomeNews.vue";
-import HomeGalleryVue from "../components/HomeGallery.vue";
 import HomeAbout from "../components/HomeAbout.vue";
+import HomeNews from "../components/HomeNews.vue";
 import HomeGallery from "../components/HomeGallery.vue";
 
 // swiper
@@ -61,13 +56,9 @@ import J7 from "../assets/7.jpg";
 import J8 from "../assets/8.jpg";
 
 
-
 export default {
   components: {
-    HeaderVue,
-    HomeAboutVue,
-    HomeNewsVue,
-    HomeGalleryVue,
+    HomeNews,
     HomeAbout,
     HomeGallery,
     Swiper,
@@ -94,7 +85,7 @@ export default {
 
 <style scoped>
 #head {
-  height: calc(100vh - 78.5px);
+  height: calc(100vh - 80px);
 }
 #background {
   background: url("../assets/main.jpg") center no-repeat;

@@ -3,7 +3,8 @@
         "home": "Home",
         "about": "About",
         "news": "News",
-        "gallery": "Gallery"
+        "gallery": "Gallery",
+        "contact": "Contact"
     },
     "common": {
         "read_more": "Read More",
@@ -15,5 +16,8 @@
         "idea": "idea",
         "courses": "courses",
         "faculty": "faculty"
+    },
+    "contact": {
+        "title": "Contact Us"
     }
 }

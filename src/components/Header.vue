@@ -28,6 +28,7 @@
         <router-link id="about_tab" class="tab" to="/about">{{ $t("header.about") }}</router-link>
         <router-link id="news_tab" class="tab" to="/news">{{ $t("header.news") }}</router-link>
         <router-link id="gallery_tab" class="tab" to="/gallery">{{ $t("header.gallery") }}</router-link>
+        <router-link id="contact_tab" class="tab" to="/contact">{{ $t("header.contact") }}</router-link>
 
         <input id="search_bar" :placeholder="$t('common.search')" />
 
@@ -93,9 +94,6 @@ const show_side_menu = ref(false);
   justify-content: flex-start;
   box-shadow: #333333 0 2px 10px;
   padding: 0px 24px;
-  /* width: 100vw; */
-
-  /*border-bottom: 5px solid #2464a4;*/
 }
 
 #logo {
@@ -122,7 +120,7 @@ const show_side_menu = ref(false);
   padding: 25px 14px;
   width: 100px;
   text-decoration: none;
-  color: #444444;
+  color: var(--main-text);
   text-align: center;
   white-space: nowrap;
 }
@@ -157,7 +155,6 @@ const show_side_menu = ref(false);
 
 #search_bar {
   border-radius: 8px;
-  /*border: 1px solid grey;*/
   background: #ffffff;
   width: 200px;
   height: 36px;
@@ -209,7 +206,6 @@ const show_side_menu = ref(false);
 }
 
 .icon {
-  /*display: block;*/
   width: 40px;
   text-align: center;
   vertical-align: middle;

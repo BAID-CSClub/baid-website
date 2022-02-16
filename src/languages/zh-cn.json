@@ -3,7 +3,8 @@
         "home": "首页",
         "about": "关于我们",
         "news": "新闻",
-        "gallery": "画廊"
+        "gallery": "画廊",
+        "contact": "联系我们"
     },
     "common": {
         "read_more": "了解更多",
@@ -13,7 +14,10 @@
         "about_title": "欢迎来到北京中学国际部",
         "school_info_title": "了解北京中学国际部",
         "idea": "理念",
-        "courses": "环境",
+        "courses": "课程",
         "faculty": "师资"
+    },
+    "contact": {
+        "title": "联系我们"
     }
 }

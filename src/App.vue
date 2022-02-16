@@ -57,7 +57,7 @@ body {
 html::-webkit-scrollbar {
   width: 4px;
   position: absolute;
-  /*height: 4px;*/
+  /* height: 4px; */
   display: none;
 }
 
@@ -74,6 +74,12 @@ html::-webkit-scrollbar {
 @font-face {
   font-family: "Source Han Sans SC";
   src: url("./fonts/SourceHanSansSC-VF.otf");
+}
+
+/* width constrain, applied to all pages */
+.main {
+  max-width: 1200px;
+  margin: auto;
 }
 </style>
 

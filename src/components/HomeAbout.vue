@@ -1,24 +1,24 @@
 <template>
   <div id="homeAbout">
+    <!-- school overview -->
     <div id="bg">
-      <div id="bg_cover">
-        <div id="container" class="main">
-          <div id="video">
-            <video controls>
-              <source src="../assets/Rocket.mp4" type="video/mp4" />Your browser does not support the video tag.
-            </video>
+      <div id="container" class="main">
+        <div id="video">
+          <video controls>
+            <source src="../assets/Rocket.mp4" type="video/mp4" />Your browser does not support the video tag.
+          </video>
+        </div>
+        <div id="information">
+          <div class="about_title">{{ $t("homeAbout.about_title") }}</div>
+          <div class="about_text">
+            北京中学，与首都同名。2013年，经北京市政府批准、由朝阳区政府主办的北京中学正式建校，备受社会各界关注。
+            <br />2017年，为了满足部分学生和家长的多元化升学需求，搭建成长的立交桥，北京中学组建国际方向班级。学校坚持中国立场、开放多元、融合创新，基于课程改革特色实践，和美国格伦罗克高中共同开发了国际教育体系课程、包括高中基础课程、AP课程、特色选修课程，满足学生个性化发展需求。
           </div>
-          <div id="information">
-            <div class="about_title">{{ $t("homeAbout.about_title") }}</div>
-            <div class="about_text">
-              北京中学，与首都同名。2013年，经北京市政府批准、由朝阳区政府主办的北京中学正式建校，备受社会各界关注。
-              <br />2017年，为了满足部分学生和家长的多元化升学需求，搭建成长的立交桥，北京中学组建国际方向班级。学校坚持中国立场、开放多元、融合创新，基于课程改革特色实践，和美国格伦罗克高中共同开发了国际教育体系课程、包括高中基础课程、AP课程、特色选修课程，满足学生个性化发展需求。
-            </div>
-            <router-link class="link" to="/about">{{ $t("common.read_more") }}</router-link>
-          </div>
+          <router-link class="link" to="/about">{{ $t("common.read_more") }}</router-link>
         </div>
       </div>
     </div>
+    <!-- principle info -->
     <div id="principle" class="main">
       <div id="principle_speech">
         <div id="left">“</div>
@@ -28,45 +28,40 @@
       </div>
       <img class="pic" src="../assets/cherry.png" alt="Cherry" />
     </div>
+    <!-- school info -->
     <div id="school_info_container">
       <div id="school_info_title" class="main">{{ $t("homeAbout.school_info_title") }}</div>
       <div id="school_info" class="main">
         <div id="idea" class="info">
-          <div class="cover">
-            <div class="info_container">
-              <div class="info_title">{{ $t("homeAbout.idea") }}</div>
-              <div class="info_text">
-                2017年，为了满足部分学生和家长的多元化升学需求，搭建成长的立交桥，北京中学组建国际方向班级。学校坚持中国立场、开放多元、融合创新。
-                <br />
-                <br />
-                <router-link class="link" to="/about">{{ $t("common.read_more") }}</router-link>
-              </div>
+          <div class="info_container">
+            <div class="info_title">{{ $t("homeAbout.idea") }}</div>
+            <div class="info_text">
+              2017年，为了满足部分学生和家长的多元化升学需求，搭建成长的立交桥，北京中学组建国际方向班级。学校坚持中国立场、开放多元、融合创新。
+              <br />
+              <br />
+              <router-link class="link" to="/about">{{ $t("common.read_more") }}</router-link>
             </div>
           </div>
         </div>
-        <div id="environment" class="info">
-          <div class="cover">
-            <div class="info_container">
-              <div class="info_title">{{ $t("homeAbout.courses") }}</div>
-              <div class="info_text">
-                2017年，为了满足部分学生和家长的多元化升学需求，搭建成长的立交桥，北京中学组建国际方向班级。学校坚持中国立场、开放多元、融合创新。
-                <br />
-                <br />
-                <router-link class="link" to="/about">{{ $t("common.read_more") }}</router-link>
-              </div>
+        <div id="courses" class="info">
+          <div class="info_container">
+            <div class="info_title">{{ $t("homeAbout.courses") }}</div>
+            <div class="info_text">
+              2017年，为了满足部分学生和家长的多元化升学需求，搭建成长的立交桥，北京中学组建国际方向班级。学校坚持中国立场、开放多元、融合创新。
+              <br />
+              <br />
+              <router-link class="link" to="/about">{{ $t("common.read_more") }}</router-link>
             </div>
           </div>
         </div>
         <div id="faculty" class="info">
-          <div class="cover">
-            <div class="info_container">
-              <div class="info_title">{{ $t("homeAbout.faculty") }}</div>
-              <div class="info_text">
-                2017年，为了满足部分学生和家长的多元化升学需求，搭建成长的立交桥，北京中学组建国际方向班级。学校坚持中国立场、开放多元、融合创新。
-                <br />
-                <br />
-                <router-link class="link" to="/about">{{ $t("common.read_more") }}</router-link>
-              </div>
+          <div class="info_container">
+            <div class="info_title">{{ $t("homeAbout.faculty") }}</div>
+            <div class="info_text">
+              2017年，为了满足部分学生和家长的多元化升学需求，搭建成长的立交桥，北京中学组建国际方向班级。学校坚持中国立场、开放多元、融合创新。
+              <br />
+              <br />
+              <router-link class="link" to="/about">{{ $t("common.read_more") }}</router-link>
             </div>
           </div>
         </div>
@@ -85,11 +80,8 @@
   background-attachment: fixed;
   background-size: cover;
   height: 800px;
-}
-
-#bg_cover {
   background-color: rgba(0, 0, 0, 0.5);
-  height: 100%;
+  background-blend-mode: darken;
   display: flex;
   overflow: auto;
   align-items: center;
@@ -126,11 +118,6 @@
 .info_container {
   padding: 40px;
 }
-.cover {
-  background-color: rgba(0, 0, 0, 0.5);
-  height: 100%;
-  width: 100%;
-}
 
 .info_title {
   font-weight: bold;
@@ -142,7 +129,7 @@
 .info_text {
   margin-top: 16px;
   font-size: 20px;
-  line-height: 150%;
+  line-height: 1.5;
 }
 
 video {
@@ -173,11 +160,13 @@ video {
     flex-direction: column;
   }
 
-  #environment {
+  #courses {
     background: url("../assets/HBW05519.JPG") center;
     background-repeat: no-repeat;
     background-size: cover;
     margin: 40px 0px;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: darken;
   }
 
   .info {
@@ -185,6 +174,8 @@ video {
     max-width: 500px;
     min-width: 300px;
     color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: darken;
   }
   #principle {
     flex-direction: column;
@@ -208,11 +199,13 @@ video {
     text-align: left;
     color: white;
   }
-  #environment {
+  #courses {
     background: url("../assets/HBW05519.JPG") center;
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0px 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: darken;
   }
   .info {
     flex: 1;
@@ -224,17 +217,21 @@ video {
   background: url("../assets/HBW05519.JPG") center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: darken;
 }
 #faculty {
   background: url("../assets/HBW05519.JPG") center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: darken;
 }
 .about_text {
   padding: 4px 0;
-  line-height: 30px;
+  line-height: 1.5;
   font-size: 20px;
-  color: #e0e0e0;
+  color: white;
 }
 .about_title {
   font-size: 32px;
@@ -301,10 +298,5 @@ video {
   flex: 1;
   object-fit: cover;
   margin-left: 20px;
-}
-
-.main {
-  max-width: 1200px;
-  margin: auto;
 }
 </style>
