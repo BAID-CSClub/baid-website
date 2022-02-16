@@ -4,6 +4,7 @@
         <div class="main">
             <div
                 id="page_title"
+                class="shadow"
             >{{ $t("contact.title") }}</div>
             <div id="content">
                 <div class="title" data-aos="zoom-in" data-aos-duration="600">一些标题</div>

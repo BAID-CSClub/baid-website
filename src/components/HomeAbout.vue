@@ -262,9 +262,6 @@ video {
   flex: 1;
   color: white;
 }
-.shadow {
-  box-shadow: #333333 1px 1px 10px;
-}
 #idea {
   background: url("../assets/HBW05519.JPG") center;
   background-repeat: no-repeat;

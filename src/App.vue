@@ -81,6 +81,9 @@ html::-webkit-scrollbar {
   max-width: 1200px;
   margin: auto;
 }
+.shadow {
+  box-shadow: #333333 1px 1px 10px;
+}
 </style>
 
 <style scoped>
