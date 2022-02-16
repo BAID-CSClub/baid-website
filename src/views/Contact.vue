@@ -2,10 +2,7 @@
     <div>
         <div id="head_pic"></div>
         <div class="main">
-            <div
-                id="page_title"
-                class="shadow"
-            >{{ $t("contact.title") }}</div>
+            <div id="page_title" class="shadow">{{ $t("contact.title") }}</div>
             <div id="content">
                 <div class="title" data-aos="zoom-in" data-aos-duration="600">一些标题</div>
                 <div
@@ -45,6 +42,9 @@
     #content {
         padding: 40px;
     }
+    #head_pic {
+        height: 400px;
+    }
 }
 /* mobile */
 @media (max-width: 600px) {
@@ -61,6 +61,9 @@
     #content {
         padding: 20px 40px 40px;
     }
+    #head_pic {
+        height: 40vw;
+    }
 }
 #content {
     color: var(--main-text);
@@ -70,7 +73,6 @@
     background-size: cover;
     background-color: rgba(0, 0, 0, 0.5);
     background-blend-mode: darken;
-    height: 30vw;
 }
 .title {
     font-weight: bold;
