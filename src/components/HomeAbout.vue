@@ -42,7 +42,7 @@
         >——周慧 北京中学国际部校长</div>
       </div>
       <img
-        class="pic"
+        class="pic shadow"
         src="../assets/cherry.png"
         alt="Cherry"
         data-aos="fade-left"
@@ -51,7 +51,7 @@
       />
     </div>
     <!-- school info -->
-    <div id="school_info_container">
+    <div id="school_info_container" class="shadow">
       <div
         id="school_info_title"
         class="main"
@@ -60,7 +60,13 @@
         data-aos-delay="300"
       >{{ $t("homeAbout.school_info_title") }}</div>
       <div id="school_info" class="main">
-        <div id="idea" class="info" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="300">
+        <div
+          id="idea"
+          class="info shadow"
+          data-aos="zoom-in"
+          data-aos-duration="600"
+          data-aos-delay="300"
+        >
           <div class="info_container">
             <div class="info_title">{{ $t("homeAbout.idea") }}</div>
             <div class="info_text">
@@ -73,7 +79,7 @@
         </div>
         <div
           id="courses"
-          class="info"
+          class="info shadow"
           data-aos="zoom-in"
           data-aos-duration="600"
           data-aos-delay="300"
@@ -90,7 +96,7 @@
         </div>
         <div
           id="faculty"
-          class="info"
+          class="info shadow"
           data-aos="zoom-in"
           data-aos-duration="600"
           data-aos-delay="300"
@@ -117,9 +123,6 @@
 </script>
 
 <style scoped>
-.fade-in {
-}
-
 #bg {
   background: url("../assets/HBW05519.JPG") center;
   background-repeat: no-repeat;
@@ -216,10 +219,8 @@ video {
   }
 
   .info {
-    flex: 1;
     max-width: 500px;
     min-width: 300px;
-    color: white;
     background-color: rgba(0, 0, 0, 0.5);
     background-blend-mode: darken;
   }
@@ -254,10 +255,15 @@ video {
     background-blend-mode: darken;
   }
   .info {
-    flex: 1;
     height: 500px;
-    color: white;
   }
+}
+.info {
+  flex: 1;
+  color: white;
+}
+.shadow {
+  box-shadow: #333333 1px 1px 10px;
 }
 #idea {
   background: url("../assets/HBW05519.JPG") center;
