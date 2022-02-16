@@ -23,25 +23,47 @@
 </script>
 
 <style scoped>
+/* desktop */
+@media (min-width: 600px) {
+    #page_title {
+        display: inline;
+        font-weight: bold;
+        font-size: 32px;
+        background-color: var(--baid-blue);
+        color: white;
+        padding: 20px 40px;
+        margin: 0px 40px;
+        text-transform: uppercase;
+    }
+    #content {
+        padding: 40px;
+    }
+}
+/* mobile */
+@media (max-width: 600px) {
+    #page_title {
+        display: block;
+        text-align: center;
+        font-weight: bold;
+        font-size: 32px;
+        background-color: var(--baid-blue);
+        color: white;
+        padding: 20px 40px;
+        text-transform: uppercase;
+    }
+    #content {
+        padding: 20px 40px 40px;
+    }
+}
+#content {
+    color: var(--main-text);
+}
 #head_pic {
     background: url("../assets/main.jpg") center no-repeat;
     background-size: cover;
     background-color: rgba(0, 0, 0, 0.5);
     background-blend-mode: darken;
     height: 30vw;
-}
-#page_title {
-    display: inline;
-    font-weight: bold;
-    font-size: 32px;
-    background-color: var(--baid-blue);
-    width: auto;
-    color: white;
-    padding: 20px 40px;
-    text-transform: uppercase;
-}
-#content {
-    padding: 40px 0px 40px;
 }
 .title {
     font-weight: bold;

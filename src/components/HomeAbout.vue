@@ -267,8 +267,8 @@ video {
   margin-right: 20px;
   display: flex;
   flex-direction: column;
-  color: var(--main-text);
   justify-content: center;
+  color: var(--main-text);
 }
 /* #principle_pic {
   flex: 1;
