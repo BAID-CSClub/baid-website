@@ -2,9 +2,8 @@ import { createApp } from 'vue';
 import { createI18n } from 'vue-i18n';
 import App from './App.vue';
 import Router from "./router";
-
-
-
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 Promise.all([import("./languages/en-us.json"), import("./languages/zh-cn.json")]).then(data => {
     const messages = {
@@ -18,13 +17,7 @@ Promise.all([import("./languages/en-us.json"), import("./languages/zh-cn.json")]
     });
     const app = createApp(App);
 
-    app.use(Router).use(i18n);
+    app.use(Router).use(i18n).use(AOS.init());
 
     app.mount('#app');
 });
-
-// console.log(messages);
-
-
-
-

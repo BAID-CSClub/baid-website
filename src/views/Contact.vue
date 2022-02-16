@@ -2,18 +2,24 @@
     <div>
         <div id="head_pic"></div>
         <div class="main">
-            <div id="page_title">{{ $t("contact.title") }}</div>
+            <div
+                id="page_title"
+            >{{ $t("contact.title") }}</div>
             <div id="content">
-                <div class="title">一些标题</div>
+                <div class="title" data-aos="zoom-in" data-aos-duration="600">一些标题</div>
                 <div
                     class="text"
+                    data-aos="zoom-in"
+                    data-aos-duration="600"
                 >一些文字一些文字一些文字一些文字一些文字一些文字一些文字一些文字一些文字一些文字一些文字一些文字一些文字一些文字一些文字一些文字一些文字一些文字一些文字一些文字一些文字一些文字一些文字一些文字一些文字一些文字一些文字一些文字一些文字一些文字</div>
-                <div class="text">一些文字</div>
-                <div class="title">一些标题</div>
+                <div class="text" data-aos="zoom-in" data-aos-duration="600">一些文字</div>
+                <div class="title" data-aos="zoom-in" data-aos-duration="600">一些标题</div>
                 <div
                     class="text"
+                    data-aos="zoom-in"
+                    data-aos-duration="600"
                 >一些文字一些文字一些文字一些文字一些文字一些文字一些文字一些文字一些文字一些文字一些文字一些文字一些文字一些文字一些文字一些文字一些文字一些文字一些文字一些文字一些文字一些文字一些文字一些文字一些文字一些文字一些文字一些文字一些文字一些文字</div>
-                <div class="text">一些文字</div>
+                <div class="text" data-aos="zoom-in" data-aos-duration="600">一些文字</div>
             </div>
         </div>
     </div>

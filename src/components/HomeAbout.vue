@@ -3,36 +3,64 @@
     <!-- school overview -->
     <div id="bg">
       <div id="container" class="main">
-        <div id="video">
+        <div id="video" data-aos="fade-right" data-aos-duration="600" data-aos-delay="300">
           <video controls>
             <source src="../assets/Rocket.mp4" type="video/mp4" />Your browser does not support the video tag.
           </video>
         </div>
         <div id="information">
-          <div class="about_title">{{ $t("homeAbout.about_title") }}</div>
-          <div class="about_text">
+          <div
+            class="about_title"
+            data-aos="fade-left"
+            data-aos-duration="600"
+            data-aos-delay="300"
+          >{{ $t("homeAbout.about_title") }}</div>
+          <div class="about_text" data-aos="fade-left" data-aos-duration="600" data-aos-delay="300">
             北京中学，与首都同名。2013年，经北京市政府批准、由朝阳区政府主办的北京中学正式建校，备受社会各界关注。
             <br />2017年，为了满足部分学生和家长的多元化升学需求，搭建成长的立交桥，北京中学组建国际方向班级。学校坚持中国立场、开放多元、融合创新，基于课程改革特色实践，和美国格伦罗克高中共同开发了国际教育体系课程、包括高中基础课程、AP课程、特色选修课程，满足学生个性化发展需求。
+            <router-link class="link" to="/about">{{ $t("common.read_more") }}</router-link>
           </div>
-          <router-link class="link" to="/about">{{ $t("common.read_more") }}</router-link>
         </div>
       </div>
     </div>
     <!-- principle info -->
     <div id="principle" class="main">
       <div id="principle_speech">
-        <div id="left">“</div>
-        <div id="text">STH FROM OUR DEAR CHERRY</div>
-        <div id="right">”</div>
-        <div id="principle_info">——周慧 北京中学国际部校长</div>
+        <div id="left" data-aos="fade-right" data-aos-duration="600" data-aos-delay="300">“</div>
+        <div
+          id="text"
+          data-aos="zoom-in"
+          data-aos-duration="600"
+          data-aos-delay="300"
+        >STH FROM OUR DEAR CHERRY</div>
+        <div id="right" data-aos="fade-left" data-aos-duration="600" data-aos-delay="300">”</div>
+        <div
+          id="principle_info"
+          data-aos="zoom-in"
+          data-aos-duration="600"
+          data-aos-delay="300"
+        >——周慧 北京中学国际部校长</div>
       </div>
-      <img class="pic" src="../assets/cherry.png" alt="Cherry" />
+      <img
+        class="pic"
+        src="../assets/cherry.png"
+        alt="Cherry"
+        data-aos="fade-left"
+        data-aos-duration="600"
+        data-aos-delay="300"
+      />
     </div>
     <!-- school info -->
     <div id="school_info_container">
-      <div id="school_info_title" class="main">{{ $t("homeAbout.school_info_title") }}</div>
+      <div
+        id="school_info_title"
+        class="main"
+        data-aos="zoom-in"
+        data-aos-duration="600"
+        data-aos-delay="300"
+      >{{ $t("homeAbout.school_info_title") }}</div>
       <div id="school_info" class="main">
-        <div id="idea" class="info">
+        <div id="idea" class="info" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="300">
           <div class="info_container">
             <div class="info_title">{{ $t("homeAbout.idea") }}</div>
             <div class="info_text">
@@ -43,7 +71,13 @@
             </div>
           </div>
         </div>
-        <div id="courses" class="info">
+        <div
+          id="courses"
+          class="info"
+          data-aos="zoom-in"
+          data-aos-duration="600"
+          data-aos-delay="300"
+        >
           <div class="info_container">
             <div class="info_title">{{ $t("homeAbout.courses") }}</div>
             <div class="info_text">
@@ -54,7 +88,13 @@
             </div>
           </div>
         </div>
-        <div id="faculty" class="info">
+        <div
+          id="faculty"
+          class="info"
+          data-aos="zoom-in"
+          data-aos-duration="600"
+          data-aos-delay="300"
+        >
           <div class="info_container">
             <div class="info_title">{{ $t("homeAbout.faculty") }}</div>
             <div class="info_text">
@@ -70,10 +110,16 @@
   </div>
 </template>
 
+
 <script>
+
+
 </script>
 
 <style scoped>
+.fade-in {
+}
+
 #bg {
   background: url("../assets/HBW05519.JPG") center;
   background-repeat: no-repeat;
