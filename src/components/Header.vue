@@ -214,6 +214,7 @@ const show_side_menu = ref(false);
 
 #label {
   transition: all 0.2s ease-in-out;
+  padding-right: 24px;
 }
 
 @keyframes late_hide {
