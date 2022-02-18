@@ -1,29 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="342px" height="322px" viewBox="0 0 342 322" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>Group 4</title>
+<svg width="295px" height="263px" viewBox="0 0 295 263" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Triangle</title>
     <defs>
-        <filter x="-24.8%" y="-27.0%" width="149.6%" height="153.9%" filterUnits="objectBoundingBox" id="filter-1">
+        <polygon id="path-1" points="172.5 260 294 476 51 476"></polygon>
+        <filter x="-18.9%" y="-20.4%" width="137.9%" height="142.6%" filterUnits="objectBoundingBox" id="filter-2">
             <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
             <feGaussianBlur stdDeviation="15" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
-            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
-            <feMerge>
-                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
-                <feMergeNode in="SourceGraphic"></feMergeNode>
-            </feMerge>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
         </filter>
     </defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Artboard" transform="translate(39.000000, -216.000000)">
-            <g id="Group-4" filter="url(#filter-1)" transform="translate(7.000000, 262.000000)">
-                <path d="M125,1.04709121 L249.15919,229.5 L0.84081044,229.5 L125,1.04709121 Z" id="Triangle" stroke="#979797" fill="#FFFFFF"></path>
-                <text id="测试-测试文本-测试文本测-测试文本测试" fill-rule="nonzero" font-family="PingFangSC-Regular, PingFang SC" font-size="23" font-weight="normal" fill="#000000">
-                    <tspan x="102" y="69">测试</tspan>
-                    <tspan x="79" y="101">测试文本</tspan>
-                    <tspan x="67.5" y="133">测试文本测</tspan>
-                    <tspan x="56" y="165">测试文本测试</tspan>
-                    <tspan x="33" y="197">测试文本测试文本</tspan>
-                </text>
-            </g>
+        <g id="Triangle" transform="translate(-25.000000, -237.000000)">
+            <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+            <path stroke="#979797" stroke-width="1" d="M172.5,261.019864 L293.145076,475.5 L51.8549237,475.5 L172.5,261.019864 Z" stroke-linejoin="square" fill="#FFFFFF" fill-rule="evenodd"></path>
         </g>
     </g>
 </svg>

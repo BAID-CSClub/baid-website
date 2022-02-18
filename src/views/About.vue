@@ -166,7 +166,7 @@
     width:200px;
     height:200px;
     margin-top:-396px;
-    margin-left:150px;
+    margin-left:145px;
     margin-right:-300px;
     margin-bottom: 0px;
   }
@@ -176,7 +176,7 @@
     width:200px;
     height:200px;
     margin-top:-50px;
-    margin-left:150px;
+    margin-left:145px;
     margin-right:-170px;
     margin-bottom: 0px;
   }
