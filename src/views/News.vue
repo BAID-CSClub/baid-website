@@ -1,7 +1,7 @@
 <script setup>
 import NewsBlockLeft from '../components/NewsBlockLeft.vue'
 import NewsBlockRight from '../components/NewsBlockRight.vue'
-import NewsImages from "../assets/Main.jpg"
+import NewsImages from "../assets/main.jpg"
 </script>
 
 <template>
