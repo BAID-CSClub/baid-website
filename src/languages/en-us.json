@@ -17,6 +17,12 @@
         "courses": "courses",
         "faculty": "faculty"
     },
+    "news": {
+        "title": "News"
+    },
+    "about": {
+        "title": "About BAID"
+    },
     "contact": {
         "title": "Contact Us"
     }

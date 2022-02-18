@@ -17,6 +17,12 @@
         "courses": "课程",
         "faculty": "师资"
     },
+    "news": {
+        "title": "新闻"
+    },
+    "about": {
+        "title": "关于 BAID"
+    },
     "contact": {
         "title": "联系我们"
     }

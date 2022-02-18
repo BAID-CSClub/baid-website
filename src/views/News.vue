@@ -5,50 +5,114 @@ import NewsImages from "../assets/main.jpg"
 </script>
 
 <template>
-  <img :src='NewsImages' alt='' class='background'>
-  <div class="main">
-    <h1 class="title">N<span style="color: var(--baid-red);">E</span>WS</h1> 
-    <NewsBlockRight content="在此输入文字" title="在此输入文字" :imageurl='NewsImages' subtitle="年份/月份/日期" link="还没做跳转功能"></NewsBlockRight>
-    <NewsBlockLeft content="在此输入文字" title="在此输入文字" :imageurl='NewsImages' subtitle="年份/月份/日期" link="还没做跳转功能"></NewsBlockLeft>
-    <NewsBlockRight content="在此输入文字" title="在此输入文字" :imageurl='NewsImages' subtitle="年份/月份/日期" link="还没做跳转功能"></NewsBlockRight>
-    <NewsBlockLeft content="在此输入文字" title="在此输入文字" :imageurl='NewsImages' subtitle="年份/月份/日期" link="还没做跳转功能"></NewsBlockLeft>
-    <NewsBlockRight content="在此输入文字" title="在此输入文字" :imageurl='NewsImages' subtitle="年份/月份/日期" link="还没做跳转功能"></NewsBlockRight>
-    <NewsBlockLeft content="在此输入文字" title="在此输入文字" :imageurl='NewsImages' subtitle="年份/月份/日期" link="还没做跳转功能"></NewsBlockLeft>
+  <div>
+    <div id="head_pic"></div>
+    <div class="main">
+      <div id="page_title" class="shadow">{{ $t("news.title") }}</div>
+      <div id="content">
+        <NewsBlockRight
+          content="在此输入文字"
+          title="在此输入文字"
+          :imageurl="NewsImages"
+          subtitle="年份/月份/日期"
+          link="还没做跳转功能"
+        ></NewsBlockRight>
+        <NewsBlockLeft
+          content="在此输入文字"
+          title="在此输入文字"
+          :imageurl="NewsImages"
+          subtitle="年份/月份/日期"
+          link="还没做跳转功能"
+        ></NewsBlockLeft>
+        <NewsBlockRight
+          content="在此输入文字"
+          title="在此输入文字"
+          :imageurl="NewsImages"
+          subtitle="年份/月份/日期"
+          link="还没做跳转功能"
+        ></NewsBlockRight>
+        <NewsBlockLeft
+          content="在此输入文字"
+          title="在此输入文字"
+          :imageurl="NewsImages"
+          subtitle="年份/月份/日期"
+          link="还没做跳转功能"
+        ></NewsBlockLeft>
+        <NewsBlockRight
+          content="在此输入文字"
+          title="在此输入文字"
+          :imageurl="NewsImages"
+          subtitle="年份/月份/日期"
+          link="还没做跳转功能"
+        ></NewsBlockRight>
+        <NewsBlockLeft
+          content="在此输入文字"
+          title="在此输入文字"
+          :imageurl="NewsImages"
+          subtitle="年份/月份/日期"
+          link="还没做跳转功能"
+        ></NewsBlockLeft>
+      </div>
+    </div>
   </div>
 </template>
 
 <style scoped>
-.background {
-  content:fixed;
-  height:100vh;
-  width:100vw;
-  object-fit: cover;
-  position:fixed;
-  left:0px;
-  top:0px;
-  z-index:-3;
-  filter:brightness(60%);
+/* desktop */
+@media (min-width: 600px) {
+  #page_title {
+    display: inline;
+    font-weight: bold;
+    font-size: 32px;
+    background-color: var(--baid-blue);
+    color: white;
+    padding: 20px 40px;
+    margin: 0px 40px;
+    text-transform: uppercase;
+  }
+  #content {
+    padding: 40px;
+  }
+  #head_pic {
+    height: 400px;
+  }
 }
-.main {
-  width:65vw;
-  max-width:1000px;
-  background:white;
-  position:relative;
-  margin:auto;
-  padding:20px;
+/* mobile */
+@media (max-width: 600px) {
+  #page_title {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    font-size: 32px;
+    background-color: var(--baid-blue);
+    color: white;
+    padding: 20px 40px;
+    text-transform: uppercase;
+  }
+  #content {
+    padding: 20px 40px 40px;
+  }
+  #head_pic {
+    height: 40vw;
+  }
+}
+#content {
+  color: var(--main-text);
+}
+#head_pic {
+  background: url("../assets/main.jpg") center no-repeat;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: darken;
 }
 .title {
-  text-align:middle;
-  color: var(--baid-blue);
-  margin-left: 15px;
-  font-size: 65px;
+  font-weight: bold;
+  font-size: 24px;
+  margin: 20px 0px;
 }
-@media screen and (max-width: 800px) {
-  .title {
-    margin-left: 20px;
-  }
-   .blocker{
-    display:none;
-  }
+.text {
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 10px 0px;
 }
 </style>
