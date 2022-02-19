@@ -17,6 +17,9 @@
         "courses": "courses",
         "faculty": "faculty"
     },
+    "homeNews": {
+        "title": "BAID News"
+    },
     "news": {
         "title": "News"
     },

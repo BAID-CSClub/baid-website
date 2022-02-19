@@ -1,99 +1,75 @@
-<script setup>
-const props = defineProps(['content','title','imageurl','subtitle','link']);
-</script>
-
 <template>
-    <div class="box">   
-      <img :src="props.imageurl" alt="活动配图">
-      <div class="blocker" />
-      <div class="content">
-        <h2 class="n-title">{{title}}</h2>
-        <h3 class="n-subtitle">{{subtitle}}</h3>
-        <p class="n-note" @click="Jump">
-          {{content}}
-        </p>
-      </div>
+  <div class="box">
+    <div class="img">
+      <img :src="props.imageurl" alt="活动配图" class="shadow" />
+    </div>
+    <div class="content">
+      <div class="n-title">{{ title }}</div>
+      <div class="n-date">{{ date }}</div>
+      <div class="n-note" @click="Jump">{{ content }}</div>
+      <router-link class="link" to="#">{{ $t("common.read_more") }}</router-link>
+    </div>
   </div>
 </template>
 
-<style scoped>
-img {
-  object-fit: contain;
-}
-.n-title {
-  font-size: 35px;
-  margin-top: 15px;
-  margin-bottom: -5px;
-}
-.n-subtitle {
-  font-size: 15px;
-  color:gray;
+<script setup>
+const props = defineProps(['content', 'title', 'imageurl', 'date', 'link']);
+</script>
 
-  margin-top: 0px;
-  margin-bottom: 5px;
+<style scoped>
+.n-title {
+  font-size: 32px;
+  font-weight: bold;
+  margin: 4px 0px;
+}
+.n-date {
+  font-size: 18px;
+  color: gray;
+  margin: 4px 0px;
 }
 .box {
-  text-align:center;
-  margin:0px 30px;
-  transform:translateX(-1.5vw)
+  display: flex;
+  margin: 40px 0px;
 }
 .n-note {
-  font-size: 20px;
-  line-height: 30px;
-  text-overflow: ellipsis;
+  display: inline-block;
+  font-size: 18px;
+  overflow-block: ellipsis;
   overflow: hidden;
-  max-height: 300px;
+  display: -webkit-box !important;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  margin: 4px 0px;
 }
-.n-note::after{
-  content:"......";
+.img {
+  flex: 1;
+  align-self: center;
+  text-align: center;
 }
-.box > img {
-  height:16vw;
-  display:inline-block;
-  vertical-align:middle; 
-  border: #2b537a inset 3px;
-  margin: 15px 0px;
-  max-height:240px;
+img {
+  height: 260px;
+  display: inline-block;
+  object-fit: contain;
 }
 .content {
-  width: 40%;
-  padding-right:100px;
-  display:inline-block;
-  vertical-align:middle; 
-  padding: 15px 0px;
-  text-align:right;
+  flex: 1;
+  text-align: left;
+  line-height: 1.5;
+  color: var(--main-text);
 }
-.title {
-  text-align:left;
+.link {
   color: var(--baid-blue);
-  margin-left: 15px;
-  font-size: 45px;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+  display: block;
+  font-size: 18px;
 }
-.blocker{
-      display: inline-block;
-      width:30px;
-}
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
   .box {
     flex-direction: column;
-    align-items: center;
-    transform:none;
   }
   .content {
-    text-align:center;
-    width: 90%;
+    padding-top: 20px;
   }
-  .box > img {
-    height:auto;
-    max-height:none;
-    width: 80%;
-  }
-  .title {
-    margin-left: 20px;
-  }
-  .blocker{
-    display:none;
-  }
-
 }
 </style>
