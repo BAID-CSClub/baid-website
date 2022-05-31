@@ -73,8 +73,8 @@ html::-webkit-scrollbar {
 
 @font-face {
   font-family: "Source Han Sans SC";
-  src: url("./fonts/SourceHanSansSC-VF.otf");
-  /* src: url("./fonts/SourceHanSerifSC-VF.otf.woff2") format("woff2"); */
+  /* src: url("./fonts/SourceHanSansSC-VF.otf"); */
+  src: url("./fonts/SourceHanSerifSC-VF.otf.woff2") format("woff2");
 }
 
 /* width constrain, applied to all pages */
